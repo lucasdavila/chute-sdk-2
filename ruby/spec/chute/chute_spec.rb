@@ -1,13 +1,40 @@
 require_relative '../../spec/spec_helper'
 
 describe Chute do
-  class << self
 
-  end
-  it "should have api constants defined" do
-    Chute.api_path.should == 'http://api.getchute.com'
-    Chute.app_id.should == 'app_id'
-    Chute.app_secret.should == 'app_secret'
-    Chute.access_token.should == 'access_token'
+  # test/awesome/configuration_test.rbrequire 'helper'
+
+  describe 'configuration' do
+
+    describe '.api_endpoint' do
+      it 'should return default api_endpoint' do
+        Chute.api_endpoint.should == Chute::Configuration::DEFAULT_API_ENDPOINT
+      end
+    end
+
+    describe '.auth_endpoint' do
+      it 'should return default auth_endpoint' do
+        Chute.auth_endpoint.should == Chute::Configuration::DEFAULT_AUTH_ENDPOINT
+      end
+    end
+
+    describe '.app_id' do
+      it 'should return default app_id' do
+        Chute.app_id.should == Chute::Configuration::DEFAULT_APP_ID
+      end
+    end
+
+    describe '.app_secret' do
+      it 'should return default app_secret' do
+        Chute.app_secret.should == Chute::Configuration::DEFAULT_APP_SECRET
+      end
+    end
+
+    describe '.access_token' do
+      it 'should return default access_token' do
+        Chute.access_token.should == Chute::Configuration::DEFAULT_ACCESS_TOKEN
+      end
+    end
+
   end
 end
