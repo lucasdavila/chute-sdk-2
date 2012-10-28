@@ -36,5 +36,19 @@ describe Chute do
       end
     end
 
+    after do
+      Awesome.reset
+    end
+
+    describe '.config' do
+      Chute::Configuration::VALID_CONFIG_KEYS.each do |key|
+        it "should set the #{key}" do
+          Chute.config do |config|
+            config.send("#{key}=", key)
+            Chute.send(key).should == key
+          end
+        end
+      end
+    end
   end
 end
