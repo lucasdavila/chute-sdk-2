@@ -50,5 +50,15 @@ describe Chute do
         end
       end
     end
+
+    Chute::Configuration::VALID_CONFIG_KEYS.each do |key|
+      describe ".#{key}" do
+        it 'should return the default value' do
+          Chute.send(key).should == Chute::Configuration.const_get("DEFAULT_#{key.upcase}")
+        end
+      end
+    end
+
+
   end
 end
