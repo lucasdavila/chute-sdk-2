@@ -23,12 +23,14 @@ module Chute
 
       begin
         response = self.send(format, "#{base_uri}#{url}", options)
+
         if Rails.env.development?
           Rails.logger.info "----------------------------------------"
           Rails.logger.info "Requesting url: #{base_uri}#{url}"
           Rails.logger.info response.parsed_response
           Rails.logger.info "----------------------------------------"
         end
+
         parse(response)
       rescue Errno::ECONNREFUSED
         p 'Service Unavailable'
