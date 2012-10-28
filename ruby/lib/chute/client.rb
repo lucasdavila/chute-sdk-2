@@ -1,6 +1,6 @@
 module Chute
   class Client
-    # Define the same set of accessors as the Awesome module
+    # Define the same set of accessors as the Chute module
     attr_accessor *Configuration::VALID_CONFIG_KEYS
 
     def initialize(options={})
