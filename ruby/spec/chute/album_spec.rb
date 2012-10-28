@@ -1,5 +1,4 @@
 require_relative '../../spec/spec_helper'
 
-describe Chute do
-
+describe Chute::Album do
 end

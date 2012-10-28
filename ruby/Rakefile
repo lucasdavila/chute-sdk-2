@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "chute"
   gem.homepage = "http://github.com/darko1002001/chute"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{getchute API wrapper}
+  gem.description = %Q{wrapper for the API for getchute.com}
   gem.email = "darkogrozdanovski@gmail.com"
   gem.authors = ["Darko Grozdanovski"]
   # dependencies defined in Gemfile
