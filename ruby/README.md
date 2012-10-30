@@ -23,10 +23,12 @@ to run the tests write
 Configuration of the Gem Inside your config/ folder
 --
 
+```
 Chute.config do |config|
   config.app_id = YOUR_APP_ID
   config.app_secret = YOUR_APP_SECRET
   config.access_token = YOUR_ACCESS_TOKEN
 end
+```
 
 
