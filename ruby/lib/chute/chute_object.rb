@@ -22,7 +22,6 @@ module Chute
                 end
               end
             end
-
             chute_object
           else
             object

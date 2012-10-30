@@ -5,28 +5,24 @@ module Chute
     include HTTParty
     format :json
 
-    def self.base_uri
-      "http://#{Chute.api_endpoint}"
-    end
-
     def self.headers
       {
-        'Authorization' => Chute.access_token,
-        'Content-Type'  => 'application/json',
-        'Accepts'       => 'application/json'
+          'Authorization' => Chute.access_token,
+          'Content-Type' => 'application/json',
+          'Accepts' => 'application/json'
       }
     end
 
     def self.request(format, url, body="")
-      body    = JSON.unparse(body) unless String === body
-      options = body.blank? ? { :headers=> headers } : { :headers=> headers, :body=> body }
+      body = JSON.unparse(body) unless String === body
+      options = body.blank? ? {:headers => headers} : {:headers => headers, :body => body}
 
       begin
-        response = self.send(format, "#{base_uri}#{url}", options)
+        response = self.send(format, "#{Chute.api_endpoint}#{url}", options)
 
         if Rails.env.development?
           Rails.logger.info "----------------------------------------"
-          Rails.logger.info "Requesting url: #{base_uri}#{url}"
+          Rails.logger.info "Requesting url: #{Chute.api_endpoint}#{url}"
           Rails.logger.info response.parsed_response
           Rails.logger.info "----------------------------------------"
         end
@@ -40,7 +36,7 @@ module Chute
         p 'Internal Server Error'
         Chute::Response.with_code_and_error(500, 'Internal Server Error')
         raise ChuteApiInternalException.new('Chute API Exception')
-      rescue Exception=> ex
+      rescue Exception => ex
         p 'Unknown Error'
         raise
       end
@@ -51,6 +47,8 @@ module Chute
     end
   end
 
-  class ChuteApiUnavailableException < Exception;end
-  class ChuteApiInternalException < Exception;end
+  class ChuteApiUnavailableException < Exception;
+  end
+  class ChuteApiInternalException < Exception;
+  end
 end

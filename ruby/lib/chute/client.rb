@@ -1,5 +1,14 @@
 module Chute
   class Client
+
+    class << self
+      ['get', 'post', 'put', 'delete'].each do |req_type|
+        define_method(req_type) do |url, data={}|
+          Chute::Connection.request(req_type, url, data)
+        end
+      end
+    end
+
     # Define the same set of accessors as the Chute module
     attr_accessor *Configuration::VALID_CONFIG_KEYS
 
@@ -14,6 +23,7 @@ module Chute
         send("#{key}=", merged_options[key])
       end
     end
+
 
   end
 end

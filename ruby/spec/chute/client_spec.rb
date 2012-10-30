@@ -60,4 +60,22 @@ describe Chute::Client do
 
   end
 
+  describe "client request methods" do
+
+    it 'should have GET method defined' do
+      Chute::Client.should respond_to :get
+    end
+
+    it 'should have POST method defined' do
+      Chute::Client.should respond_to :post
+    end
+    it 'should have PUT method defined' do
+      Chute::Client.should respond_to :put
+    end
+    it 'should have DELETE method defined' do
+      Chute::Client.should respond_to :delete
+    end
+
+  end
+
 end

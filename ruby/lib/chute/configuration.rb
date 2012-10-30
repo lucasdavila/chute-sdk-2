@@ -6,8 +6,8 @@ module Chute
     VALID_CONFIG_KEYS     = VALID_CONNECTION_KEYS + VALID_OPTIONS_KEYS
 
 
-    DEFAULT_API_ENDPOINT    = 'http://api.getchute.com/'
-    DEFAULT_AUTH_ENDPOINT   = 'http://getchute.com/auth/'
+    DEFAULT_API_ENDPOINT    = 'http://api.getchute.com'
+    DEFAULT_AUTH_ENDPOINT   = 'http://getchute.com/auth'
 
     DEFAULT_APP_ID          = 'app_id'
     DEFAULT_APP_SECRET      = 'app_secret'
