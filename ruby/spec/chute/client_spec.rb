@@ -1,4 +1,4 @@
-require_relative '../../spec/spec_helper'
+require 'spec_helper'
 
 describe Chute::Client do
 
@@ -62,18 +62,10 @@ describe Chute::Client do
 
   describe "client request methods" do
 
-    it 'should have GET method defined' do
-      Chute::Client.should respond_to :get
-    end
-
-    it 'should have POST method defined' do
-      Chute::Client.should respond_to :post
-    end
-    it 'should have PUT method defined' do
-      Chute::Client.should respond_to :put
-    end
-    it 'should have DELETE method defined' do
-      Chute::Client.should respond_to :delete
+    [:get, :post, :put, :delete].each do |req_type|
+      it "should have #{req_type} method defined" do
+        Chute::Client.should respond_to req_type
+      end
     end
 
   end

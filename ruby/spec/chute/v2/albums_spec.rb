@@ -1,4 +1,8 @@
-require_relative '../../../spec/spec_helper'
+require 'spec_helper'
 
 describe Chute::V2::Albums do
+  include_context "init credentials"
+
+
+
 end
