@@ -8,8 +8,8 @@ module Chute
         end
 
         # Asset Geo Search
-        def geo_search(lat_lng, radius)
-          Chute::Client.get("/v2/assets/geo/#{lat_lng}/#{radius}")
+        def geo_search(lat,lng, radius)
+          Chute::Client.get("/v2/assets/geo/#{lat},#{lng}/#{radius}")
         end
 
         # Asset Details
