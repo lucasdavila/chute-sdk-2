@@ -27,6 +27,15 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}/geo")
         end
 
+        # Asset Tags
+        def tags(id)
+          Chute::Client.get("/v2/assets/#{id}/tags")
+        end
+
+        def update_tags(id, tags)
+          Chute::Client.put("/v2/assets/#{id}/tags", :tag => tags)
+        end
+
         # TODO Implement on server: Asset Create
         def create(data)
           Chute::Client.post("/v2/assets/_upload", :urls => urls)
