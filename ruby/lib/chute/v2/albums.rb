@@ -13,8 +13,8 @@ module Chute
         end
 
         # Album Assets Geo Search
-        def geo_search(id, lat_lng, radius)
-          Chute::Client.get("/v2/albums/#{id}/assets/geo/#{lat_lng}/#{radius}")
+        def geo_search(id, lat, lng, radius)
+          Chute::Client.get("/v2/albums/#{id}/assets/geo/#{lat},#{lng}/#{radius}")
         end
 
         # Album Assets
@@ -28,13 +28,13 @@ module Chute
         end
 
         # Album Create
-        def create(data)
-          Chute::Client.post("/v2/albums", data)
+        def create(album)
+          Chute::Client.post("/v2/albums", album)
         end
 
         # Album Update
-        def update(id, data)
-          Chute::Client.put("/v2/albums/#{id}", data)
+        def update(id, album)
+          Chute::Client.put("/v2/albums/#{id}", album)
         end
 
         # Album Delete

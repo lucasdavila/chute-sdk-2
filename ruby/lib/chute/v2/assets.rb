@@ -7,14 +7,14 @@ module Chute
           Chute::Client.get("/v2/assets")
         end
 
-        # Asset Geo Search
-        def geo_search(lat,lng, radius)
-          Chute::Client.get("/v2/assets/geo/#{lat},#{lng}/#{radius}")
-        end
-
         # Asset Details
         def find(id)
           Chute::Client.get("/v2/assets/#{id}")
+        end
+
+        # Asset Geo Search
+        def geo_search(lat, lng, radius)
+          Chute::Client.get("/v2/assets/geo/#{lat},#{lng}/#{radius}")
         end
 
         # Asset Exif
@@ -27,14 +27,14 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}/geo")
         end
 
-        # Asset Import
+        # TODO Implement on server: Asset Create
         def create(data)
-          Chute::Client.post("/v2/assets/_upload", :urls=> urls)
+          Chute::Client.post("/v2/assets/_upload", :urls => urls)
         end
 
         # Album Update
-        def update(id, data)
-          Chute::Client.put("/v2/assets/#{id}", data)
+        def update(id, asset)
+          Chute::Client.put("/v2/assets/#{id}", asset)
         end
 
         # Album Delete
