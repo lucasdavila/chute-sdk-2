@@ -47,6 +47,19 @@ describe Chute::V2::Albums do
     end
 
   end
+
+  describe "GET Album List" do
+    before do
+      VCR.insert_cassette 'albums_list', :record => :new_episodes
+    end
+    after do
+      VCR.eject_cassette
+    end
+    it "should be able to list all albums" do
+      Chute::V2::Albums.all
+    end
+
+  end
   
   
 end

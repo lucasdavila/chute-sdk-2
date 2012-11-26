@@ -17,9 +17,9 @@ module Chute
       if object.success?
         if data.parsed_response
           object.data       = Chute::ChuteObject.parse(data.parsed_response['data'])
-          object.meta       = Chute::ChuteObject.parse(data.parsed_response['meta']) unless data.parsed_response['meta'].blank?
-          object.pagination = Chute::ChuteObject.parse(data.parsed_response['pagination']) unless data.parsed_response['pagination'].blank?
-          object.parent     = Chute::ChuteObject.parse(data.parsed_response['parent']) unless data.parsed_response['parent'].blank?
+          object.meta       = Chute::ChuteObject.parse(data.parsed_response['meta']) unless data.parsed_response['meta'].nil?
+          object.pagination = Chute::ChuteObject.parse(data.parsed_response['pagination']) unless data.parsed_response['pagination'].nil?
+          object.parent     = Chute::ChuteObject.parse(data.parsed_response['parent']) unless data.parsed_response['parent'].nil?
         end
       else
         object.errors = data.parsed_response['errors']
