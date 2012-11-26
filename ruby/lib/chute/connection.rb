@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'hashie/mash'
 
 module Chute
   class Connection
@@ -22,16 +23,18 @@ module Chute
     def self.request(request_type, url, body="")
       body = JSON.unparse(body) unless String === body
       options = body.empty? ? {:headers => headers} : {:headers => headers, :body => body}
-     puts headers
       begin
         response = self.send(request_type, "#{base_uri}#{url}", options)
 
+=begin
         puts "----------------------------------------"
         puts "Requesting url: #{base_uri}#{url}"
         puts response.parsed_response
         puts "----------------------------------------"
+=end
 
         parse(response)
+
       rescue Errno::ECONNREFUSED
         p 'Service Unavailable'
         Chute::Response.with_code_and_error(503, 'Service Unavailable')

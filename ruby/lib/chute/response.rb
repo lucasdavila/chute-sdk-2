@@ -1,46 +1,17 @@
+require 'hashie/mash'
+
 module Chute
-  class Response < Object
-
-    attr_accessor :code
-    attr_accessor :data
-    attr_accessor :meta
-    attr_accessor :pagination
-    attr_accessor :parent
-    attr_accessor :errors
-
-    def self.new(data=nil)
-      object       = super()
-      return object unless data
-
-      object.code  = data.response.code.to_i
-
-      if object.success?
-        if data.parsed_response
-          object.data       = Chute::ChuteObject.parse(data.parsed_response['data'])
-          object.meta       = Chute::ChuteObject.parse(data.parsed_response['meta']) unless data.parsed_response['meta'].nil?
-          object.pagination = Chute::ChuteObject.parse(data.parsed_response['pagination']) unless data.parsed_response['pagination'].nil?
-          object.parent     = Chute::ChuteObject.parse(data.parsed_response['parent']) unless data.parsed_response['parent'].nil?
-        end
-      else
-        object.errors = data.parsed_response['errors']
-      end
-
-      object
-    end
+  class Response < Hashie::Mash
 
     def self.with_code_and_error(code, error)
       object        = Chute::Response.new
-      object.code   = code
-      object.errors = [error]
+      object.response.code   = code
+      object.response.errors = [error]
       object
     end
 
     def success?
-      [200, 201].include?(code)
-    end
-
-    def method_missing(meth, *args, &block)
-      data.send(meth, *args, &block)
+      [200, 201].include?(response.code)
     end
 
   end
