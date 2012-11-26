@@ -50,15 +50,32 @@ describe Chute::V2::Albums do
 
   describe "GET Album List" do
     before do
-      VCR.insert_cassette 'albums_list', :record => :new_episodes
+      VCR.insert_cassette 'albums/albums_list', :record => :new_episodes
     end
     after do
       VCR.eject_cassette
     end
+
     it "should be able to list all albums" do
-      Chute::V2::Albums.all
+      puts Chute::V2::Albums.all.to_yaml
     end
 
+  end
+
+  describe "POST Album Create" do
+    before do
+      VCR.insert_cassette 'albums/albums_create', :record => :new_episodes
+    end
+    after do
+      VCR.eject_cassette
+    end
+
+    it "should be able to create an album" do
+      album = Hash.new
+      album[:name] = "some album #{Time.now.to_s}"
+      album[:moderate_comments] = true
+      puts Chute::V2::Albums.create(album).to_yaml
+    end
   end
   
   

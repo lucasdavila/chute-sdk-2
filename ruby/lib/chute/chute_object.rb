@@ -11,10 +11,10 @@ module Chute
             end
           when Hash
             chute_object = ChuteObject.new
-            chute_object.data = object
+            chute_object = object
 
             object.collect do |key, value|
-              chute_object.data = object
+              chute_object = object
 
               unless chute_object.respond_to?(:key)
                 chute_object.class.send(:define_method, key) do
