@@ -1,6 +1,6 @@
 module Chute
   module V2
-    class Albums < ChuteObject
+    class Albums
       class << self
         # Album Listing
         def all
@@ -41,6 +41,20 @@ module Chute
         def delete(id)
           Chute::Client.delete("/v2/albums/#{id}")
         end
+
+        def stats(album_id)
+          Chute::Client.get("/v2/albums/#{album_id}/stats")
+        end
+
+        def add_assets(album_id, *asset_ids)
+          Chute::Client.post("/v2/albums/#{album_id}/add_assets", :asset_ids =>  JSON.unparse(asset_ids))
+        end
+
+        def remove_assets(album_id, *asset_ids)
+
+          Chute::Client.post("/v2/albums/#{album_id}/remove_assets",:asset_ids => JSON.unparse(asset_ids))
+        end
+
       end
     end
   end

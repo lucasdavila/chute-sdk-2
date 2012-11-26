@@ -1,6 +1,6 @@
 module Chute
   module V2
-    class Users < ChuteObject
+    class Users
       class << self
 
         def find(id)

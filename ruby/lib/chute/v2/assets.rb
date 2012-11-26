@@ -1,6 +1,6 @@
 module Chute
   module V2
-    class Assets < ChuteObject
+    class Assets
       class << self
         # Asset Listing
         def all

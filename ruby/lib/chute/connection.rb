@@ -25,8 +25,8 @@ module Chute
       options = body.empty? ? {:headers => headers} : {:headers => headers, :body => body}
       begin
         response = self.send(request_type, "#{base_uri}#{url}", options)
-
 =begin
+
         puts "----------------------------------------"
         puts "Requesting url: #{base_uri}#{url}"
         puts response.parsed_response

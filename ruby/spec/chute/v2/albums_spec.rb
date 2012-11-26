@@ -59,6 +59,13 @@ describe Chute::V2::Albums do
 
       it "should be able to list all albums" do
         response = Chute::V2::Albums.all
+        response.data.should_not == nil
+
+      end
+
+      it "should contain pagination" do
+        response = Chute::V2::Albums.all
+        response.pagination.should_not ==nil
       end
 
     end
@@ -77,7 +84,21 @@ describe Chute::V2::Albums do
         album[:name] = "some album #{Time.now.to_s}"
         album[:moderate_comments] = true
         response = Chute::V2::Albums.create(album)
-        puts response.to_yaml
+      end
+    end
+
+    describe "GET Album by ID" do
+      before do
+        VCR.insert_cassette 'albums/albums_get', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should retrieve album by its id" do
+        id = Chute::V2::Albums.create({:name => "Created Album"}).data.id
+        response = Chute::V2::Albums.find(id)
+        response.data.id.should == id
       end
     end
 
@@ -92,10 +113,66 @@ describe Chute::V2::Albums do
 
       it "should be able to update an album" do
         response = Chute::V2::Albums.create({:name => "Created Album"})
-        response = Chute::V2::Albums.update(response.data.id, {:name => "Updated Album"})
+        name = "Updated Album"
+        response = Chute::V2::Albums.update(response.data.id, {:name => name})
+        response.data.name.should == name
       end
     end
 
+    describe "DELETE Album" do
+
+      before do
+        VCR.insert_cassette 'albums/albums_delete', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should be able to delete an album" do
+        response = Chute::V2::Albums.create({:name => "Created Album"})
+        response = Chute::V2::Albums.delete(response.data.id)
+        response.success?.should == true
+      end
+    end
+
+    describe "GET Album Stats" do
+      before do
+        VCR.insert_cassette 'albums/albums_stats', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should retrieve stats" do
+        response = Chute::V2::Albums.create({:name => "Created Album"})
+        response = Chute::V2::Albums.stats(response.data.id)
+      end
+    end
+
+    describe "POST add and remove Assets" do
+
+      let(:id) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
+      let(:asset_ids) { [123123, 4342324, 534543] }
+
+      before do
+        VCR.insert_cassette 'albums/albums_add_remove_assets', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should be able to add existing assets to existing album" do
+        pending "Not implemented yet"
+        response = Chute::V2::Albums.add_assets(id,*asset_ids)
+      end
+
+
+      it "should be able to remove existing assets from existing album" do
+        pending "Not implemented yet"
+        response = Chute::V2::Albums.remove_assets(id,*asset_ids)
+      end
+
+    end
 
   end
 
