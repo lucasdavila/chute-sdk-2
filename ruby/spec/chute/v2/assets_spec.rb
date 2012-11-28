@@ -160,8 +160,6 @@ describe Chute::V2::Assets do
         VCR.eject_cassette
       end
 
-
-
       it "should fetch geo info for asset" do
         response = import_assets
         response = Chute::V2::Assets.geo(response.data[0].id)

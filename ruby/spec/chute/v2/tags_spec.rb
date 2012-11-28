@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Chute::V2::Albums do
+describe Chute::V2::Tags do
   include_context "init credentials"
 
   describe ".tags" do
