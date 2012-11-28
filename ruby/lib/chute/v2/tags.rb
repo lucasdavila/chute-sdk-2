@@ -24,7 +24,7 @@ module Chute
 
         # Change the complete list of tags for an asset inside an album
         def update_album_tags(album_id, *tags)
-          Chute::Client.put("/v2/albums/#{asset_id}/tags", :tag => tags)
+          Chute::Client.put("/v2/albums/#{album_id}/tags", :tag => tags)
         end
 
         # Add new tags to existing assets, without replacing the current ones
