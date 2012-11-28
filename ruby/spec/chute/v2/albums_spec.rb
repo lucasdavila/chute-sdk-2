@@ -16,9 +16,9 @@ describe Chute::V2::Albums do
       it { Chute::V2::Albums.should_not respond_to(:find).with(0).arguments }
     end
 
-    describe ".geo_search" do
-      it { Chute::V2::Albums.should respond_to(:geo_search).with(4).arguments }
-      it { Chute::V2::Albums.should_not respond_to(:geo_search).with(5).arguments }
+    describe ".geo_locate" do
+      it { Chute::V2::Albums.should respond_to(:geo_locate).with(4).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:geo_locate).with(5).arguments }
     end
 
     describe ".assets" do
@@ -38,12 +38,26 @@ describe Chute::V2::Albums do
 
     describe ".update" do
       it { Chute::V2::Albums.should respond_to(:update).with(2).arguments }
-      it { Chute::V2::Albums.should_not respond_to(:update).with(3).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:update).with(0).arguments }
     end
 
     describe ".delete" do
       it { Chute::V2::Albums.should respond_to(:delete).with(1).arguments }
       it { Chute::V2::Albums.should_not respond_to(:delete).with(2).arguments }
+    end
+
+    describe ".stats" do
+      it { Chute::V2::Albums.should respond_to(:stats).with(1).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:stats).with(0).arguments }
+    end
+
+    describe ".add_assets" do
+      it { Chute::V2::Albums.should respond_to(:add_assets).with(2).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:add_assets).with(0).arguments }
+    end
+    describe ".remove_assets" do
+      it { Chute::V2::Albums.should respond_to(:remove_assets).with(2).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:remove_assets).with(0).arguments }
     end
 
   end

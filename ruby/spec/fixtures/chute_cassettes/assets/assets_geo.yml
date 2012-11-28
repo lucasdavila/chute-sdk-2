@@ -1,0 +1,200 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/assets/import
+    body: 
+      encoding: UTF-8
+      string: "{\"urls\":[\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/11/27/1354010019306/Brad-Pitt-010.jpg\",\"http://datastore01.rediff.com/h1500-w1500/thumb/52605E5F6D6C65665C60665C696C7371/fuugfaw7icy0hq4j.D.0.Richa-Gangopadhyay-Latest-Hot-Photo.jpg\"]}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Wed, 28 Nov 2012 14:46:15 GMT
+      Etag: 
+      - "\"d05e6c1b53ad03c8306c3fbea967300c\""
+      Last-Modified: 
+      - Wed, 28 Nov 2012 12:13:46 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4998"
+      X-Available-Monthly-Calls: 
+      - "3719944"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 38288ac3604731a1d4b13b0b87435c0a
+      X-Runtime: 
+      - "0.176893"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls%5B%5D=http%3A%2F%2Fwww.wix.com%2Fblog%2Fwp-content%2Fuploads%2F2012%2F08%2FHowToGoBeyondStockPhotoCliches.jpg&urls%5B%5D=http%3A%2F%2Fstatic.guim.co.uk%2Fsys-images%2FGuardian%2FPix%2Fpictures%2F2012%2F11%2F27%2F1354010019306%2FBrad-Pitt-010.jpg&urls%5B%5D=http%3A%2F%2Fdatastore01.rediff.com%2Fh1500-w1500%2Fthumb%2F52605E5F6D6C65665C60665C696C7371%2Ffuugfaw7icy0hq4j.D.0.Richa-Gangopadhyay-Latest-Hot-Photo.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719944,\"max_hourly_calls\":5000,\"available_hourly_calls\":4998}},\"data\":[{\"id\":71907823,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907823\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T12:13:46Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvBzgbp/75x75\",\"url\":\"http://media.getchute.com/media/4RIvBzgbp\",\"shortcut\":\"4RIvBzgbp\",\"type\":\"image\",\"caption\":\"New Asset Title\",\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvBzgbp\"},\"service\":\"uploaded\"},{\"id\":71907824,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907824\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907824/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907824/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T11:12:02Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvCrodt/75x75\",\"url\":\"http://media.getchute.com/media/4RIvCrodt\",\"shortcut\":\"4RIvCrodt\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2012/11/27/1354010019306/Brad-Pitt-010.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvCrodt\"},\"service\":\"uploaded\"},{\"id\":71907825,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907825\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907825/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907825/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T11:12:02Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvDhnmi/75x75\",\"url\":\"http://media.getchute.com/media/4RIvDhnmi\",\"shortcut\":\"4RIvDhnmi\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://datastore01.rediff.com/h1500-w1500/thumb/52605E5F6D6C65665C60665C696C7371/fuugfaw7icy0hq4j.D.0.Richa-Gangopadhyay-Latest-Hot-Photo.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvDhnmi\"},\"service\":\"uploaded\"}]}"
+    http_version: 
+  recorded_at: Wed, 28 Nov 2012 14:45:44 GMT
+- request: 
+    method: get
+    uri: https://api.getchute.com/v2/assets/71907823/geo
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Wed, 28 Nov 2012 14:46:15 GMT
+      Etag: 
+      - "\"8df34d127a421c4b3d84b68087362b62\""
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4997"
+      X-Available-Monthly-Calls: 
+      - "3719943"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - miss
+      X-Request-Id: 
+      - 8af1e1920e248c4427c677af1a991fd8
+      X-Runtime: 
+      - "0.049478"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "258"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Geo Details\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/71907823/geo?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719943,\"max_hourly_calls\":5000,\"available_hourly_calls\":4997}},\"data\":{}}"
+    http_version: 
+  recorded_at: Wed, 28 Nov 2012 14:45:45 GMT
+- request: 
+    method: get
+    uri: https://api.getchute.com/v2/assets/geo/-36.88155833,174.70791111/500
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Wed, 28 Nov 2012 15:00:19 GMT
+      Etag: 
+      - "\"d548c01302a220b188f491c66d7d9c06\""
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "5000"
+      X-Available-Monthly-Calls: 
+      - "3719942"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - miss
+      X-Request-Id: 
+      - 9c7fc40832cc765b796358f833beeec7
+      X-Runtime: 
+      - "0.188153"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "583"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Assets for location: -36.88155833,174.70791111 within a 500 metres redius\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/geo/-36.88155833,174.70791111/500?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719942,\"max_hourly_calls\":5000,\"available_hourly_calls\":5000}},\"data\":[],\"pagination\":{\"current_page\":1,\"next_page\":\"https://api.getchute.com/v2/assets/geo/-36.88155833,174.70791111/500?&page=2\",\"previous_page\":null,\"first_page\":\"https://api.getchute.com/v2/assets/geo/-36.88155833,174.70791111/500?\",\"per_page\":5}}"
+    http_version: 
+  recorded_at: Wed, 28 Nov 2012 14:59:49 GMT
+recorded_with: VCR 2.2.5

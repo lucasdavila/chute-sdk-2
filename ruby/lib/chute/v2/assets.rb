@@ -3,8 +3,8 @@ module Chute
     class Assets
       class << self
         # Asset Listing
-        def all
-          Chute::Client.get("/v2/assets")
+        def all(album_id)
+          Chute::Client.get("/v2/albums/#{album_id}/assets")
         end
 
         # Asset Details
@@ -12,8 +12,8 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}")
         end
 
-        # Asset Geo Search
-        def geo_search(lat, lng, radius)
+        # Asset Geo Locate
+        def geo_locate(lat, lng, radius)
           Chute::Client.get("/v2/assets/geo/#{lat},#{lng}/#{radius}")
         end
 
@@ -27,22 +27,21 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}/geo")
         end
 
-        # Asset Tags
-        def tags(id)
-          Chute::Client.get("/v2/assets/#{id}/tags")
-        end
-
-        def update_tags(id, tags)
-          Chute::Client.put("/v2/assets/#{id}/tags", :tag => tags)
-        end
-
         # TODO Implement on server: Asset Create
-        def create(data)
-          Chute::Client.post("/v2/assets/_upload", :urls => urls)
+        def upload(data)
+          Chute::Client.post("/v2/assets/upload", :urls => urls)
         end
 
-        # Album Update
-        def update(id, asset)
+        def import(urls, shortcuts)
+          params = Hash.new
+          params[:urls] = urls unless urls==nil
+          params[:shortcuts] = shortcuts unless shortcuts==nil
+          Chute::Client.post("/v2/assets/import", params)
+        end
+
+        # Asset Update
+        # Title
+        def update(id, asset={})
           Chute::Client.put("/v2/assets/#{id}", asset)
         end
 

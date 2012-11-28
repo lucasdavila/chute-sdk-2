@@ -13,7 +13,7 @@ module Chute
         end
 
         # Album Assets Geo Search
-        def geo_search(id, lat, lng, radius)
+        def geo_locate(id, lat, lng, radius)
           Chute::Client.get("/v2/albums/#{id}/assets/geo/#{lat},#{lng}/#{radius}")
         end
 
@@ -33,7 +33,7 @@ module Chute
         end
 
         # Album Update
-        def update(id, album)
+        def update(id, album={})
           Chute::Client.put("/v2/albums/#{id}", album)
         end
 
@@ -51,7 +51,6 @@ module Chute
         end
 
         def remove_assets(album_id, *asset_ids)
-
           Chute::Client.post("/v2/albums/#{album_id}/remove_assets",:asset_ids => JSON.unparse(asset_ids))
         end
 

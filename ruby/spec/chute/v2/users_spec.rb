@@ -17,4 +17,37 @@ describe Chute::V2::Users do
     end
 
   end
+
+  describe "requests" do
+
+    describe "GET Current user info" do
+      before do
+        VCR.insert_cassette 'users/users_me', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should get the current user info" do
+        response = Chute::V2::Users.me
+      end
+
+    end
+
+    describe "GET User By Id" do
+      before do
+        VCR.insert_cassette 'users/users_get', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should be able to get user by id" do
+        response = Chute::V2::Users.me
+        response = Chute::V2::Users.find(response.data.id)
+      end
+
+    end
+  end
+
 end
