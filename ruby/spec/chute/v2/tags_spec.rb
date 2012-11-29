@@ -54,6 +54,7 @@ describe Chute::V2::Tags do
     it "should list all asset tags" do
       response = Chute::V2::Tags.list_asset_tags(asset_id.data[0].id)
       response.success?.should == true
+      response.to_pretty_json
     end
 
     it "should replace all existing asset tags" do
