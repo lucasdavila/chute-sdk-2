@@ -32,7 +32,6 @@ module Chute
           Chute::Client.post("/v2/albums/#{album_id}/tags", :tag => tags)
         end
 
-
       end
     end
   end
