@@ -23,8 +23,8 @@ module Chute
         end
 
         # Import Album Assets
-        def import(id, urls)
-          Chute::Client.get("/v2/albums/#{id}/assets/import", :urls=> urls)
+        def import(album_id, *urls)
+          Chute::Client.post("/v2/albums/#{album_id}/assets/import", :urls=> urls)
         end
 
         # Album Create
@@ -46,8 +46,8 @@ module Chute
           Chute::Client.get("/v2/albums/#{album_id}/stats")
         end
 
-        def add_assets(album_id, *asset_ids)
-          Chute::Client.post("/v2/albums/#{album_id}/add_assets", :asset_ids =>  JSON.unparse(asset_ids))
+        def add_assets(album_id, asset_ids)
+          Chute::Client.post("/v2/albums/#{album_id}/add_assets", :asset_ids =>  asset_ids)
         end
 
         def remove_assets(album_id, *asset_ids)

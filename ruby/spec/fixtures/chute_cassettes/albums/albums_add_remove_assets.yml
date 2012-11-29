@@ -197,4 +197,71 @@ http_interactions:
       string: " "
     http_version: 
   recorded_at: Wed, 28 Nov 2012 09:45:01 GMT
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/assets/import
+    body: 
+      encoding: UTF-8
+      string: "{\"urls\":\"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg\"}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Thu, 29 Nov 2012 15:25:35 GMT
+      Etag: 
+      - "\"e109632f58397e26b953c827c1486da8\""
+      Last-Modified: 
+      - Thu, 29 Nov 2012 13:55:20 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4998"
+      X-Available-Monthly-Calls: 
+      - "3719920"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - ad80c7de455a17a3580b24253cc85b87
+      X-Runtime: 
+      - "0.057907"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719920,\"max_hourly_calls\":5000,\"available_hourly_calls\":4998}},\"data\":[{\"id\":72569916,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/72569916\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/72569916/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/72569916/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-29T13:55:20Z\",\"updated_at\":\"2012-11-29T13:55:20Z\",\"thumbnail\":\"http://media.getchute.com/media/4UuKweohy/75x75\",\"url\":\"http://media.getchute.com/media/4UuKweohy\",\"shortcut\":\"4UuKweohy\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4UuKweohy\"},\"service\":\"uploaded\"}]}"
+    http_version: 
+  recorded_at: Thu, 29 Nov 2012 15:25:03 GMT
 recorded_with: VCR 2.2.5

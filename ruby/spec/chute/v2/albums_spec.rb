@@ -28,7 +28,7 @@ describe Chute::V2::Albums do
 
     describe ".import" do
       it { Chute::V2::Albums.should respond_to(:import).with(2).arguments }
-      it { Chute::V2::Albums.should_not respond_to(:import).with(3).arguments }
+      it { Chute::V2::Albums.should_not respond_to(:import).with(0).arguments }
     end
 
     describe ".create" do
@@ -166,7 +166,7 @@ describe Chute::V2::Albums do
     describe "POST add and remove Assets" do
 
       let(:id) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
-      let(:asset_ids) { [123123, 4342324, 534543] }
+      let(:asset_ids) { [4342325, 4342324, 534543] }  # Non Existing assets (random)
 
       before do
         VCR.insert_cassette 'albums/albums_add_remove_assets', :record => :new_episodes
@@ -177,13 +177,14 @@ describe Chute::V2::Albums do
 
       it "should be able to add existing assets to existing album" do
         pending "Not implemented yet"
-        response = Chute::V2::Albums.add_assets(id,*asset_ids)
+        response = Chute::V2::Albums.add_assets(id, asset_ids)
+        response.to_pretty_json
       end
 
 
       it "should be able to remove existing assets from existing album" do
         pending "Not implemented yet"
-        response = Chute::V2::Albums.remove_assets(id,*asset_ids)
+        response = Chute::V2::Albums.remove_assets(id, asset_ids)
       end
 
     end
