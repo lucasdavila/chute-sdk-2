@@ -4,7 +4,7 @@ module Chute
       class << self
 
         # Asset Tags
-        def list_asset_tags(album_id, asset_id)
+        def all_asset_tags(album_id, asset_id)
           Chute::Client.get("/v2/albums/#{album_id}/assets/#{asset_id}/tags")
         end
 
@@ -16,6 +16,11 @@ module Chute
         # Add new tags to existing assets, without replacing the current ones
         def add_asset_tags(album_id, asset_id, *tags)
           Chute::Client.post("/v2/albums/#{album_id}/assets/#{asset_id}/tags", :tags => process_array(tags))
+        end
+
+        # Delete all tags from an asset
+        def delete_asset_tags(album_id, asset_id)
+          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/tags")
         end
 
         private

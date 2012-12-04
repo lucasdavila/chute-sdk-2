@@ -18,8 +18,8 @@ module Chute
         end
 
 
-        def delete(album_id, asset_id)
-          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/comments")
+        def delete(comment_id)
+          Chute::Client.delete("/v2/comments/#{comment_id}")
         end
 
       end

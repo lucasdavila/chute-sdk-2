@@ -14,11 +14,9 @@ module Chute
       [200, 201].include?(response.code)
     end
 
-    def print
-      puts to_yaml
-    end
-    def to_pretty_json
+    def pretty_print
       puts JSON.pretty_generate self
     end
+
   end
 end

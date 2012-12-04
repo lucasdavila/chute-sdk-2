@@ -11,9 +11,9 @@ describe Chute::V2::Tags do
     Chute::V2::Albums.import(album_id,'http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg').data[0].id
   end
 
-  describe ".list_asset_tags" do
-    it { Chute::V2::Tags.should respond_to(:list_asset_tags).with(2).arguments }
-    it { Chute::V2::Tags.should_not respond_to(:list_asset_tags).with(1).arguments }
+  describe ".all_asset_tags" do
+    it { Chute::V2::Tags.should respond_to(:all_asset_tags).with(2).arguments }
+    it { Chute::V2::Tags.should_not respond_to(:all_asset_tags).with(1).arguments }
   end
 
   describe ".update_asset_tags" do
@@ -41,7 +41,7 @@ describe Chute::V2::Tags do
     end
 
     it "should list all asset tags" do
-      response = Chute::V2::Tags.list_asset_tags(album_id,asset_id)
+      response = Chute::V2::Tags.all_asset_tags(album_id,asset_id)
       response.success?.should == true
     end
 
@@ -50,20 +50,20 @@ describe Chute::V2::Tags do
       response.success?.should == true
     end
 
-    describe ".process_array" do
+  end
 
-      it "should be able to produce a single flat array of unique tags" do
-        Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]).should == ["TAG", "AnotherTag"]
-      end
+  describe ".process_array" do
 
-      it "should not remain unmodified" do
-        Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]).should_not == ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]
-      end
+    it "should be able to produce a single flat array of unique tags" do
+      Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]).should == ["TAG", "AnotherTag"]
+    end
 
-      it "should not modify the array if its simple" do
-        Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag"]).should == ["TAG", "AnotherTag"]
-      end
+    it "should not remain unmodified" do
+      Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]).should_not == ["TAG", "AnotherTag", ["TAG", "AnotherTag"]]
+    end
 
+    it "should not modify the array if its simple" do
+      Chute::V2::Tags.send(:process_array, ["TAG", "AnotherTag"]).should == ["TAG", "AnotherTag"]
     end
 
   end
