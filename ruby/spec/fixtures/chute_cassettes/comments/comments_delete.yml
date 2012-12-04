@@ -1,0 +1,330 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/albums
+    body: 
+      encoding: UTF-8
+      string: "{\"name\":\"Album for Comments\"}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 201
+      message: Created
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 14:30:40 GMT
+      Etag: 
+      - "\"f3d931172c2746b8a2f69064e85e8b2e\""
+      Last-Modified: 
+      - Tue, 04 Dec 2012 14:30:39 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "201"
+      X-Available-Hourly-Calls: 
+      - "4977"
+      X-Available-Monthly-Calls: 
+      - "3719971"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 0b83884868c60e9f23bd8355fc9227d6
+      X-Runtime: 
+      - "1.062631"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Album Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Comments&name=Album+for+Comments\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719971,\"max_hourly_calls\":5000,\"available_hourly_calls\":4977}},\"data\":{\"id\":2330753,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/albums/2330753\",\"title\":\"Album Details\"},\"assets\":{\"href\":\"http://api.getchute.com/v2/albums/2330753/assets\",\"title\":\"Asset Listing\"}},\"created_at\":\"2012-12-04T14:30:39Z\",\"updated_at\":\"2012-12-04T14:30:39Z\",\"shortcut\":\"9MkNprhy\",\"name\":\"Album for Comments\",\"description\":null,\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"},\"moderate_media\":false,\"moderate_comments\":false,\"counters\":{\"photos\":0,\"videos\":0,\"inbox\":0}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 14:30:43 GMT
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/albums/2330753/assets/import
+    body: 
+      encoding: UTF-8
+      string: "{\"urls\":[\"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg\"]}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 14:30:41 GMT
+      Etag: 
+      - "\"e109632f58397e26b953c827c1486da8\""
+      Last-Modified: 
+      - Thu, 29 Nov 2012 13:55:20 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4976"
+      X-Available-Monthly-Calls: 
+      - "3719970"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - a7fe756fc6c2bd29f3acfa87325f1dd4
+      X-Runtime: 
+      - "0.300106"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Transfer-Encoding: 
+      - chunked
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2330753/assets/import?&urls%5B%5D=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719970,\"max_hourly_calls\":5000,\"available_hourly_calls\":4976}},\"data\":[{\"id\":72569916,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/72569916\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/72569916/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/72569916/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-29T13:55:20Z\",\"updated_at\":\"2012-11-29T13:55:20Z\",\"thumbnail\":\"http://media.getchute.com/media/4UuKweohy/75x75\",\"url\":\"http://media.getchute.com/media/4UuKweohy\",\"shortcut\":\"4UuKweohy\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4UuKweohy\"},\"service\":\"uploaded\"}]}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 14:30:45 GMT
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/albums/2330753/assets/72569916/comments
+    body: 
+      encoding: UTF-8
+      string: "{\"comment_text\":\"My Test Comment for delete\"}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 201
+      message: Created
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 14:30:42 GMT
+      Etag: 
+      - "\"7e39ac0e2cb69824b5f215804792a8a2\""
+      Last-Modified: 
+      - Tue, 04 Dec 2012 14:30:42 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "201"
+      X-Available-Hourly-Calls: 
+      - "4975"
+      X-Available-Monthly-Calls: 
+      - "3719969"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 00dd3ce1fc0ec753b6f34b62a76f4212
+      X-Runtime: 
+      - "0.097137"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "617"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Comment Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums/2330753/assets/72569916/comments?comment%5Bcomment_text%5D=My+Test+Comment+for+delete&comment_text=My+Test+Comment+for+delete\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719969,\"max_hourly_calls\":5000,\"available_hourly_calls\":4975}},\"data\":{\"id\":598,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/comments/598\",\"title\":\"Comment Details\"}},\"created_at\":\"2012-12-04T14:30:42Z\",\"updated_at\":\"2012-12-04T14:30:42Z\",\"comment_text\":\"My Test Comment for delete\",\"name\":null,\"email\":null}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 14:30:45 GMT
+- request: 
+    method: delete
+    uri: https://api.getchute.com/v2/albums/2330753/assets/72569916/comments/598
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - no-cache
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 14:30:47 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "404"
+      X-Available-Hourly-Calls: 
+      - "4974"
+      X-Available-Monthly-Calls: 
+      - "3719968"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 490571aaf9071ceb8ef90ec1afbb4359
+      X-Runtime: 
+      - "0.029008"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "270"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"error\":\"Not Found\",\"version\":2,\"code\":404,\"href\":\"https://api.getchute.com/v2/albums/2330753/assets/72569916/comments/598?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719968,\"max_hourly_calls\":5000,\"available_hourly_calls\":4974}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 14:30:51 GMT
+- request: 
+    method: delete
+    uri: https://api.getchute.com/v2/comments/598
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 404
+      message: Not Found
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - no-cache
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 14:48:32 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "404"
+      X-Available-Hourly-Calls: 
+      - "4971"
+      X-Available-Monthly-Calls: 
+      - "3719965"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 65ea6d6aece7cd14ae3b98c0a0a00456
+      X-Runtime: 
+      - "0.028063"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "239"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"error\":\"Not Found\",\"version\":2,\"code\":404,\"href\":\"https://api.getchute.com/v2/comments/598?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719965,\"max_hourly_calls\":5000,\"available_hourly_calls\":4971}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 14:48:26 GMT
+recorded_with: VCR 2.2.5

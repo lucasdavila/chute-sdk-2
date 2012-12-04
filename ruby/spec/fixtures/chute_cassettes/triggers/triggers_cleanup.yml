@@ -1,0 +1,200 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: https://api.getchute.com/v2/triggers
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - must-revalidate, private, max-age=0
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 16:07:15 GMT
+      Etag: 
+      - "\"ad5feedf30fe3a7e27a0151364ff4d2b\""
+      Last-Modified: 
+      - Tue, 04 Dec 2012 16:07:08 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4970"
+      X-Available-Monthly-Calls: 
+      - "3719925"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - miss
+      X-Request-Id: 
+      - f83d13b035cb2321ce8886186f793a46
+      X-Runtime: 
+      - "0.074711"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "598"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Trigger Listing\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/triggers?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719925,\"max_hourly_calls\":5000,\"available_hourly_calls\":4970}},\"data\":[{\"id\":9,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/triggers/9\",\"title\":\"Trigger Details\"}},\"created_at\":\"2012-12-04T16:07:06Z\",\"updated_at\":\"2012-12-04T16:07:06Z\"},{\"id\":10,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/triggers/10\",\"title\":\"Trigger Details\"}},\"created_at\":\"2012-12-04T16:07:08Z\",\"updated_at\":\"2012-12-04T16:07:08Z\"}]}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:07:18 GMT
+- request: 
+    method: delete
+    uri: https://api.getchute.com/v2/triggers/9
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 16:07:31 GMT
+      Etag: 
+      - "\"038a819591b4cf73ffada2d756d4b9a1\""
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4969"
+      X-Available-Monthly-Calls: 
+      - "3719924"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 61cd8220621bfd3d344488e8a0e6efab
+      X-Runtime: 
+      - "0.041797"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "243"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Trigger Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/triggers/9?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719924,\"max_hourly_calls\":5000,\"available_hourly_calls\":4969}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:07:25 GMT
+- request: 
+    method: delete
+    uri: https://api.getchute.com/v2/triggers/10
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 16:07:29 GMT
+      Etag: 
+      - "\"b4bbef2da8ac419ee8a123ff25d3552e\""
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4968"
+      X-Available-Monthly-Calls: 
+      - "3719923"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 1b313443fefbd4ee794deabc5ebb5a0c
+      X-Runtime: 
+      - "0.109632"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "244"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Trigger Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/triggers/10?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719923,\"max_hourly_calls\":5000,\"available_hourly_calls\":4968}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:07:32 GMT
+recorded_with: VCR 2.2.5

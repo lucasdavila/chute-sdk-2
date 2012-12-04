@@ -1,0 +1,135 @@
+--- 
+http_interactions: 
+- request: 
+    method: post
+    uri: https://api.getchute.com/v2/triggers
+    body: 
+      encoding: UTF-8
+      string: "{\"url\":\"http://www.opencalais.com/HTTPexamples\",\"event\":\"asset_deleted\"}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 201
+      message: Created
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 16:07:07 GMT
+      Etag: 
+      - "\"a44ca6a2e8d522f6505809fd3bb46282\""
+      Last-Modified: 
+      - Tue, 04 Dec 2012 16:07:07 GMT
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "201"
+      X-Available-Hourly-Calls: 
+      - "4972"
+      X-Available-Monthly-Calls: 
+      - "3719927"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - 95881c504e35a647f546f96401574bd3
+      X-Runtime: 
+      - "0.642830"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "590"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Trigger Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/triggers?event=asset_deleted&trigger%5Bevent%5D=asset_deleted&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719927,\"max_hourly_calls\":5000,\"available_hourly_calls\":4972}},\"data\":{\"id\":11,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/triggers/11\",\"title\":\"Trigger Details\"}},\"created_at\":\"2012-12-04T16:07:07Z\",\"updated_at\":\"2012-12-04T16:07:07Z\"}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:07:09 GMT
+- request: 
+    method: delete
+    uri: https://api.getchute.com/v2/triggers/11
+    body: 
+      encoding: UTF-8
+      string: "{}"
+    headers: 
+      Authorization: 
+      - OAuth fe5d08d828c1d4562e5d2a7bbbb76e7dfa1fbc0932467a7a710bec66935df654
+      Content-Type: 
+      - application/json
+      Accepts: 
+      - application/json
+      X-Client-Id: 
+      - 508fc620018d162a070000d6
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Access-Control-Allow-Methods: 
+      - POST, GET, PUT, DELETE, OPTIONS
+      Access-Control-Allow-Origin: 
+      - "*"
+      Access-Control-Max-Age: 
+      - "1728000"
+      Cache-Control: 
+      - max-age=0, private, must-revalidate
+      Content-Type: 
+      - application/json; charset=utf-8
+      Date: 
+      - Tue, 04 Dec 2012 16:07:08 GMT
+      Etag: 
+      - "\"249a9a2ab9af6c06f8a93b5f714099d9\""
+      Server: 
+      - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status: 
+      - "200"
+      X-Available-Hourly-Calls: 
+      - "4971"
+      X-Available-Monthly-Calls: 
+      - "3719926"
+      X-Max-Hourly-Calls: 
+      - "5000"
+      X-Max-Monthly-Calls: 
+      - "3720000"
+      X-Powered-By: 
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache: 
+      - invalidate, pass
+      X-Request-Id: 
+      - b528e0ab21742f1e4c08c29fee4e5c4f
+      X-Runtime: 
+      - "0.388642"
+      X-Ua-Compatible: 
+      - IE=Edge,chrome=1
+      Content-Length: 
+      - "244"
+      Connection: 
+      - keep-alive
+    body: 
+      encoding: US-ASCII
+      string: "{\"response\":{\"title\":\"Trigger Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/triggers/11?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719926,\"max_hourly_calls\":5000,\"available_hourly_calls\":4971}}}"
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:07:11 GMT
+recorded_with: VCR 2.2.5
