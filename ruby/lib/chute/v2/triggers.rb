@@ -12,8 +12,8 @@ module Chute
           Chute::Client.post("/v2/triggers", :url => url, :event => event)
         end
 
-        def update(url, event)
-          Chute::Client.put("/v2/triggers", :url => url, :event => event)
+        def update(trigger_id,url, event)
+          Chute::Client.put("/v2/triggers/#{trigger_id}", :url => url, :event => event)
         end
 
         def delete(trigger_id)

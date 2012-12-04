@@ -29,8 +29,8 @@ describe Chute::V2::Triggers do
 
 
   describe ".update" do
-    it { Chute::V2::Triggers.should respond_to(:update).with(2).arguments }
-    it { Chute::V2::Triggers.should_not respond_to(:update).with(1).arguments }
+    it { Chute::V2::Triggers.should respond_to(:update).with(3).arguments }
+    it { Chute::V2::Triggers.should_not respond_to(:update).with(2).arguments }
   end
 
   describe ".delete" do
@@ -86,9 +86,9 @@ describe Chute::V2::Triggers do
         VCR.eject_cassette
       end
 
-      it "should be able to create a new trigger" do
+      it "should be able to update an existing trigger" do
         response = Chute::V2::Triggers.create(RANDOM_POST_RESPONDING_URL, "asset_updated")
-        response.pretty_print
+        response = Chute::V2::Triggers.update(response.data.id,RANDOM_POST_RESPONDING_URL, "album_asset_moderated")
         response.response.error.nil?.should == true
       end
     end

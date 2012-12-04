@@ -31,19 +31,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Tue, 04 Dec 2012 16:07:06 GMT
+      - Tue, 04 Dec 2012 16:15:50 GMT
       Etag: 
-      - "\"3b61ac51c416762de5009cc59d712819\""
+      - "\"c3ec2c6269029bbe4f8c8ce6972c49d3\""
       Last-Modified: 
-      - Tue, 04 Dec 2012 16:07:06 GMT
+      - Tue, 04 Dec 2012 16:15:50 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "201"
       X-Available-Hourly-Calls: 
-      - "4975"
+      - "4953"
       X-Available-Monthly-Calls: 
-      - "3719930"
+      - "3719908"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,18 +53,18 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 2a0ccd2fd4a6fa7ce122370033c247f0
+      - e32b35771c07f1ce683c8a1ff291c044
       X-Runtime: 
-      - "0.539575"
+      - "0.522452"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
-      - "588"
+      - "590"
       Connection: 
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Trigger Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/triggers?event=asset_created&trigger%5Bevent%5D=asset_created&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719930,\"max_hourly_calls\":5000,\"available_hourly_calls\":4975}},\"data\":{\"id\":9,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/triggers/9\",\"title\":\"Trigger Details\"}},\"created_at\":\"2012-12-04T16:07:06Z\",\"updated_at\":\"2012-12-04T16:07:06Z\"}}"
+      string: "{\"response\":{\"title\":\"Trigger Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/triggers?event=asset_created&trigger%5Bevent%5D=asset_created&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719908,\"max_hourly_calls\":5000,\"available_hourly_calls\":4953}},\"data\":{\"id\":16,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/triggers/16\",\"title\":\"Trigger Details\"}},\"created_at\":\"2012-12-04T16:15:50Z\",\"updated_at\":\"2012-12-04T16:15:50Z\"}}"
     http_version: 
-  recorded_at: Tue, 04 Dec 2012 16:07:00 GMT
+  recorded_at: Tue, 04 Dec 2012 16:15:52 GMT
 recorded_with: VCR 2.2.5
