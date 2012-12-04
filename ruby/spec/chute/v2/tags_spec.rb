@@ -50,6 +50,12 @@ describe Chute::V2::Tags do
       response.success?.should == true
     end
 
+    it "should delete tags by name" do
+      pending "Not deployed on server yet. check soon"
+      response = Chute::V2::Tags.delete_asset_tags(album_id,asset_id,"Replaced TAG1")
+      response.success?.should == true
+    end
+
   end
 
   describe ".process_array" do

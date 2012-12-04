@@ -185,6 +185,7 @@ describe Chute::V2::Albums do
       it "should be able to remove existing assets from existing album" do
         pending "Not implemented yet"
         response = Chute::V2::Albums.remove_assets(id, asset_ids)
+        response.to_pretty_json
       end
 
     end

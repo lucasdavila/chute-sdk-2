@@ -19,8 +19,8 @@ module Chute
         end
 
         # Delete all tags from an asset
-        def delete_asset_tags(album_id, asset_id)
-          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/tags")
+        def delete_asset_tags(album_id, asset_id, *tags)
+          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/tags", :tags => process_array(tags))
         end
 
         private
