@@ -47,7 +47,6 @@ describe Chute::V2::Comments do
     end
 
     it "should be able delete a flag" do
-      pending "Not deployed"
       response = Chute::V2::Flags.flag(album_id,asset_id)
       response = Chute::V2::Flags.unflag(album_id,asset_id,response.data.id)
       response.pretty_print
