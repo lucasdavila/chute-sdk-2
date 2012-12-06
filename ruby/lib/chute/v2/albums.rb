@@ -46,12 +46,12 @@ module Chute
           Chute::Client.get("/v2/albums/#{album_id}/stats")
         end
 
-        def add_assets(album_id, asset_ids)
+        def add_assets(album_id, *asset_ids)
           Chute::Client.post("/v2/albums/#{album_id}/add_assets", :asset_ids =>  asset_ids)
         end
 
         def remove_assets(album_id, *asset_ids)
-          Chute::Client.post("/v2/albums/#{album_id}/remove_assets",:asset_ids => JSON.unparse(asset_ids))
+          Chute::Client.post("/v2/albums/#{album_id}/remove_assets",:asset_ids => asset_ids)
         end
 
       end

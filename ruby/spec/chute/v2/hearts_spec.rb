@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Chute::V2::Comments do
+describe Chute::V2::Hearts do
   include_context "init credentials"
 
   let(:album_id) do
@@ -47,7 +47,7 @@ describe Chute::V2::Comments do
     end
 
     it "should be able delete a heart" do
-      pending "Not deployed"
+      pending "Not working"
       response = Chute::V2::Hearts.heart(album_id,asset_id)
       response = Chute::V2::Hearts.unheart(album_id,asset_id,response.data.id)
       response.success?.should == true
