@@ -22,8 +22,8 @@ describe Chute::V2::Flags do
   end
 
   describe ".delete" do
-    it { Chute::V2::Flags.should respond_to(:unflag).with(3).arguments }
-    it { Chute::V2::Flags.should_not respond_to(:unflag).with(2).arguments }
+    it { Chute::V2::Flags.should respond_to(:unflag).with(2).arguments }
+    it { Chute::V2::Flags.should_not respond_to(:unflag).with(1).arguments }
   end
 
 
@@ -47,9 +47,8 @@ describe Chute::V2::Flags do
     end
 
     it "should be able delete a flag" do
-      pending "Not Working"
       response = Chute::V2::Flags.flag(album_id,asset_id)
-      response = Chute::V2::Flags.unflag(album_id,asset_id,response.data.id)
+      response = Chute::V2::Flags.unflag(album_id,asset_id)
       response.success?.should == true
     end
 

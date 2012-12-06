@@ -22,8 +22,8 @@ describe Chute::V2::Votes do
   end
 
   describe ".delete" do
-    it { Chute::V2::Votes.should respond_to(:remove_vote).with(3).arguments }
-    it { Chute::V2::Votes.should_not respond_to(:remove_vote).with(2).arguments }
+    it { Chute::V2::Votes.should respond_to(:remove_vote).with(2).arguments }
+    it { Chute::V2::Votes.should_not respond_to(:remove_vote).with(1).arguments }
   end
 
 
@@ -47,9 +47,8 @@ describe Chute::V2::Votes do
     end
 
     it "should be able remove a vote" do
-      pending "Not working"
       response = Chute::V2::Votes.vote(album_id,asset_id)
-      response = Chute::V2::Votes.remove_vote(album_id,asset_id,response.data.id)
+      response = Chute::V2::Votes.remove_vote(album_id,asset_id)
       response.success?.should == true
     end
 

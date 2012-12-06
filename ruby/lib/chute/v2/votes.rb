@@ -11,8 +11,8 @@ module Chute
           Chute::Client.post("/v2/albums/#{album_id}/assets/#{asset_id}/votes")
         end
 
-        def remove_vote(album_id, asset_id, id)
-          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/votes/#{id}")
+        def remove_vote(album_id, asset_id)
+          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/votes")
         end
 
       end

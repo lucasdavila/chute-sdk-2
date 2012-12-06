@@ -11,8 +11,8 @@ module Chute
           Chute::Client.post("/v2/albums/#{album_id}/assets/#{asset_id}/flags")
         end
 
-        def unflag(album_id, asset_id, id)
-          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/flags/#{id}")
+        def unflag(album_id, asset_id)
+          Chute::Client.delete("/v2/albums/#{album_id}/assets/#{asset_id}/flags")
         end
 
       end
