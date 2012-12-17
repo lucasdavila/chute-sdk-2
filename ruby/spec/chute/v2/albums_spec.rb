@@ -177,7 +177,7 @@ describe Chute::V2::Albums do
 
       it "should be able to add existing assets to existing album" do
         pending "Not implemented yet"
-        response = Chute::V2::Albums.add_assets(id, asset_ids)
+        response = Chute::V2::Albums.add_assets(id, "5nEb6mbik")
         response.to_pretty_json
       end
 

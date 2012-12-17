@@ -31,19 +31,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 12:30:15 GMT
+      - Thu, 13 Dec 2012 14:42:37 GMT
       Etag: 
-      - "\"b4bde8f2acd30c3bd2fe927a6ba536ca\""
+      - "\"cb746172f80e379bca99fdddcf483672\""
       Last-Modified: 
-      - Wed, 28 Nov 2012 12:30:14 GMT
+      - Thu, 13 Dec 2012 14:42:36 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4993"
+      - "4960"
       X-Available-Monthly-Calls: 
-      - "3719948"
+      - "3719773"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,9 +53,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 01e209d78630ffc8873756b3aeadbc40
+      - 18e96678a3749b9ba003d005ec04ee66
       X-Runtime: 
-      - "0.738319"
+      - "0.368085"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -64,12 +64,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fimage.coloring.com%2Fpictures%2Foverlay%2Fcat-and-fancy-mouse.gif\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719948,\"max_hourly_calls\":5000,\"available_hourly_calls\":4993}},\"data\":[{\"id\":71940888,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71940888\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71940888/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71940888/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T12:30:14Z\",\"updated_at\":\"2012-11-28T12:30:14Z\",\"thumbnail\":\"http://media.getchute.com/media/4RR6Usfpx/75x75\",\"url\":\"http://media.getchute.com/media/4RR6Usfpx\",\"shortcut\":\"4RR6Usfpx\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://image.coloring.com/pictures/overlay/cat-and-fancy-mouse.gif\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RR6Usfpx\"},\"service\":\"uploaded\",\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}]}"
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fimage.coloring.com%2Fpictures%2Foverlay%2Fcat-and-fancy-mouse.gif\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719773,\"max_hourly_calls\":5000,\"available_hourly_calls\":4960}},\"data\":[{\"id\":98360273,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/98360273\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/98360273/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/98360273/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-12-13T14:42:36Z\",\"updated_at\":\"2012-12-13T14:42:36Z\",\"thumbnail\":\"http://media.getchute.com/media/6EI01jmpx/75x75\",\"url\":\"http://media.getchute.com/media/6EI01jmpx\",\"shortcut\":\"6EI01jmpx\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://image.coloring.com/pictures/overlay/cat-and-fancy-mouse.gif\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/6EI01jmpx\"},\"service\":\"uploaded\",\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}]}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 12:29:45 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:19 GMT
 - request: 
     method: delete
-    uri: https://api.getchute.com/v2/assets/71940888
+    uri: https://api.getchute.com/v2/assets/98360273
     body: 
       encoding: UTF-8
       string: "{}"
@@ -98,17 +98,17 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 12:31:02 GMT
+      - Thu, 13 Dec 2012 14:42:43 GMT
       Etag: 
-      - "\"a4c75756b9e624b0c059e5616d0951d5\""
+      - "\"4f69e7b1487a0baf854f3d2fedc6ce80\""
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4992"
+      - "4959"
       X-Available-Monthly-Calls: 
-      - "3719947"
+      - "3719772"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -118,9 +118,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 615de3751eaca51749ed4490ec60e7b5
+      - 74297422c342b28ea64bb5b9ae2c0351
       X-Runtime: 
-      - "30.534746"
+      - "5.188026"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -129,7 +129,7 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Asset Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/71940888?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719947,\"max_hourly_calls\":5000,\"available_hourly_calls\":4992}}}"
+      string: "{\"response\":{\"title\":\"Asset Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/98360273?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719772,\"max_hourly_calls\":5000,\"available_hourly_calls\":4959}}}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 12:30:32 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:25 GMT
 recorded_with: VCR 2.2.5

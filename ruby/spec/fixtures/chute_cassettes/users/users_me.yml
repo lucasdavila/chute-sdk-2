@@ -31,7 +31,7 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 10:33:21 GMT
+      - Thu, 13 Dec 2012 14:42:20 GMT
       Etag: 
       - "\"b16f7001f3d9f926f4c01e7206b8c653\""
       Last-Modified: 
@@ -41,9 +41,9 @@ http_interactions:
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "5000"
+      - "4955"
       X-Available-Monthly-Calls: 
-      - "3719967"
+      - "3719768"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,9 +53,9 @@ http_interactions:
       X-Rack-Cache: 
       - miss
       X-Request-Id: 
-      - baae039fb1ad9e21f8609c0c99381f60
+      - 9ed59891029f3eec5532b02e38681087
       X-Runtime: 
-      - "0.034461"
+      - "0.044090"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -64,7 +64,7 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"User Details\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/me?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719967,\"max_hourly_calls\":5000,\"available_hourly_calls\":5000}},\"data\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}"
+      string: "{\"response\":{\"title\":\"User Details\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/me?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719768,\"max_hourly_calls\":5000,\"available_hourly_calls\":4955}},\"data\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 10:33:47 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:29 GMT
 recorded_with: VCR 2.2.5

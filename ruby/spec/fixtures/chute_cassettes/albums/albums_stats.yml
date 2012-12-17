@@ -31,19 +31,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Mon, 26 Nov 2012 13:37:37 GMT
+      - Thu, 13 Dec 2012 14:41:59 GMT
       Etag: 
-      - "\"f31d78bf685e2c428a43c15c1872c686\""
+      - "\"c69ab93c62d21c5430bdfca8425dbf01\""
       Last-Modified: 
-      - Mon, 26 Nov 2012 13:37:37 GMT
+      - Thu, 13 Dec 2012 14:41:59 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "201"
       X-Available-Hourly-Calls: 
-      - "4996"
+      - "4982"
       X-Available-Monthly-Calls: 
-      - "3719982"
+      - "3719795"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,9 +53,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 8b0abaad7a2733afc677398b087171aa
+      - 2cb7be810f4ebcef56489582a7261990
       X-Runtime: 
-      - "0.197658"
+      - "0.101628"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -64,12 +64,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Album Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums?album%5Bname%5D=Created+Album&name=Created+Album\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719982,\"max_hourly_calls\":5000,\"available_hourly_calls\":4996}},\"data\":{\"id\":2325987,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/albums/2325987\",\"title\":\"Album Details\"},\"assets\":{\"href\":\"http://api.getchute.com/v2/albums/2325987/assets\",\"title\":\"Asset Listing\"}},\"created_at\":\"2012-11-26T13:37:37Z\",\"updated_at\":\"2012-11-26T13:37:37Z\",\"shortcut\":\"9L5Vhilb\",\"name\":\"Created Album\",\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"},\"moderate_media\":false,\"moderate_comments\":false,\"counters\":{\"photos\":0,\"videos\":0,\"inbox\":0}}}"
+      string: "{\"response\":{\"title\":\"Album Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums?album%5Bname%5D=Created+Album&name=Created+Album\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719795,\"max_hourly_calls\":5000,\"available_hourly_calls\":4982}},\"data\":{\"id\":2336717,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/albums/2336717\",\"title\":\"Album Details\"},\"assets\":{\"href\":\"http://api.getchute.com/v2/albums/2336717/assets\",\"title\":\"Asset Listing\"},\"parcels\":{\"href\":\"http://api.getchute.com/v2/albums/2336717/parcels\",\"title\":\"Parcel Listing\"}},\"created_at\":\"2012-12-13T14:41:59Z\",\"updated_at\":\"2012-12-13T14:41:59Z\",\"shortcut\":\"9NSZnvgy\",\"name\":\"Created Album\",\"description\":null,\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"},\"moderate_media\":false,\"moderate_comments\":false,\"counters\":{\"photos\":0,\"videos\":0,\"inbox\":0}}}"
     http_version: 
-  recorded_at: Mon, 26 Nov 2012 13:37:53 GMT
+  recorded_at: Thu, 13 Dec 2012 14:41:41 GMT
 - request: 
     method: get
-    uri: https://api.getchute.com/v2/albums/2325987/stats
+    uri: https://api.getchute.com/v2/albums/2336717/stats
     body: 
       encoding: UTF-8
       string: "{}"
@@ -98,7 +98,7 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Mon, 26 Nov 2012 13:37:39 GMT
+      - Thu, 13 Dec 2012 14:42:00 GMT
       Etag: 
       - "\"9c8dba3fdef8910a2b527f34fd9d6b97\""
       Server: 
@@ -106,9 +106,9 @@ http_interactions:
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4995"
+      - "4981"
       X-Available-Monthly-Calls: 
-      - "3719981"
+      - "3719794"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -118,9 +118,9 @@ http_interactions:
       X-Rack-Cache: 
       - miss
       X-Request-Id: 
-      - cb9aa69f5805e69993fdbcf7c84fcd8a
+      - c6524833625fca8dc7ab35a3ab6010e2
       X-Runtime: 
-      - "0.061461"
+      - "0.042582"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -131,5 +131,5 @@ http_interactions:
       encoding: US-ASCII
       string: "{\"data\":{\"user_counts\":{\"via_upload\":0,\"via_import\":0},\"source_counts\":{\"uploads\":0,\"imports\":0}}}"
     http_version: 
-  recorded_at: Mon, 26 Nov 2012 13:37:55 GMT
+  recorded_at: Thu, 13 Dec 2012 14:41:42 GMT
 recorded_with: VCR 2.2.5

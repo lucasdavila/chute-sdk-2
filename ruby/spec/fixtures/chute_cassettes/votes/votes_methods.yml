@@ -31,19 +31,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Thu, 06 Dec 2012 12:12:41 GMT
+      - Thu, 13 Dec 2012 14:42:23 GMT
       Etag: 
-      - "\"0c08d751595da9e1aadac4560e78a627\""
+      - "\"7df0d80524d2b40ac5459223a783be76\""
       Last-Modified: 
-      - Thu, 06 Dec 2012 12:12:41 GMT
+      - Thu, 13 Dec 2012 14:42:23 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "201"
       X-Available-Hourly-Calls: 
-      - "4977"
+      - "4952"
       X-Available-Monthly-Calls: 
-      - "3719849"
+      - "3719765"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,9 +53,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 1d5bf39086e12d00954898b46d73d0d9
+      - f7ee75ba809ebd21f7121f6c99b44431
       X-Runtime: 
-      - "0.058813"
+      - "0.093726"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -64,12 +64,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Album Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Votes&name=Album+for+Votes\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719849,\"max_hourly_calls\":5000,\"available_hourly_calls\":4977}},\"data\":{\"id\":2331851,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/albums/2331851\",\"title\":\"Album Details\"},\"assets\":{\"href\":\"http://api.getchute.com/v2/albums/2331851/assets\",\"title\":\"Asset Listing\"},\"parcels\":{\"href\":\"http://api.getchute.com/v2/albums/2331851/parcels\",\"title\":\"Parcel Listing\"}},\"created_at\":\"2012-12-06T12:12:41Z\",\"updated_at\":\"2012-12-06T12:12:41Z\",\"shortcut\":\"9MCvtoew\",\"name\":\"Album for Votes\",\"description\":null,\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"},\"moderate_media\":false,\"moderate_comments\":false,\"counters\":{\"photos\":0,\"videos\":0,\"inbox\":0}}}"
+      string: "{\"response\":{\"title\":\"Album Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Votes&name=Album+for+Votes\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719765,\"max_hourly_calls\":5000,\"available_hourly_calls\":4952}},\"data\":{\"id\":2336719,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/albums/2336719\",\"title\":\"Album Details\"},\"assets\":{\"href\":\"http://api.getchute.com/v2/albums/2336719/assets\",\"title\":\"Asset Listing\"},\"parcels\":{\"href\":\"http://api.getchute.com/v2/albums/2336719/parcels\",\"title\":\"Parcel Listing\"}},\"created_at\":\"2012-12-13T14:42:23Z\",\"updated_at\":\"2012-12-13T14:42:23Z\",\"shortcut\":\"9NT1krna\",\"name\":\"Album for Votes\",\"description\":null,\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"},\"moderate_media\":false,\"moderate_comments\":false,\"counters\":{\"photos\":0,\"videos\":0,\"inbox\":0}}}"
     http_version: 
-  recorded_at: Thu, 06 Dec 2012 12:12:47 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:31 GMT
 - request: 
     method: post
-    uri: https://api.getchute.com/v2/albums/2331851/assets/import
+    uri: https://api.getchute.com/v2/albums/2336719/assets/import
     body: 
       encoding: UTF-8
       string: "{\"urls\":[\"http://sphotos-f.ak.fbcdn.net/hphotos-ak-snc6/6393_451942991531262_1464781412_n.jpg\"]}"
@@ -98,7 +98,7 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Thu, 06 Dec 2012 12:12:42 GMT
+      - Thu, 13 Dec 2012 14:42:24 GMT
       Etag: 
       - "\"d9bdd7ad9e4993a0c72e3aae6d97ad7d\""
       Last-Modified: 
@@ -108,9 +108,9 @@ http_interactions:
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4976"
+      - "4951"
       X-Available-Monthly-Calls: 
-      - "3719848"
+      - "3719764"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -120,9 +120,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 062e58b9f317d5520d2e9679323b7f17
+      - 9c604810c61b3880f2cf732a6a4bad75
       X-Runtime: 
-      - "0.086162"
+      - "0.111945"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -131,12 +131,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2331851/assets/import?&urls%5B%5D=http%3A%2F%2Fsphotos-f.ak.fbcdn.net%2Fhphotos-ak-snc6%2F6393_451942991531262_1464781412_n.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719848,\"max_hourly_calls\":5000,\"available_hourly_calls\":4976}},\"data\":[{\"id\":79517672,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/79517672\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/79517672/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/79517672/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-12-05T14:19:19Z\",\"updated_at\":\"2012-12-05T14:19:19Z\",\"thumbnail\":\"http://media.getchute.com/media/5nEb6mbik/75x75\",\"url\":\"http://media.getchute.com/media/5nEb6mbik\",\"shortcut\":\"5nEb6mbik\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://sphotos-f.ak.fbcdn.net/hphotos-ak-snc6/6393_451942991531262_1464781412_n.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/5nEb6mbik\"},\"service\":\"uploaded\"}]}"
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2336719/assets/import?&urls%5B%5D=http%3A%2F%2Fsphotos-f.ak.fbcdn.net%2Fhphotos-ak-snc6%2F6393_451942991531262_1464781412_n.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719764,\"max_hourly_calls\":5000,\"available_hourly_calls\":4951}},\"data\":[{\"id\":79517672,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/79517672\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/79517672/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/79517672/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-12-05T14:19:19Z\",\"updated_at\":\"2012-12-05T14:19:19Z\",\"thumbnail\":\"http://media.getchute.com/media/5nEb6mbik/75x75\",\"url\":\"http://media.getchute.com/media/5nEb6mbik\",\"shortcut\":\"5nEb6mbik\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://sphotos-f.ak.fbcdn.net/hphotos-ak-snc6/6393_451942991531262_1464781412_n.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/5nEb6mbik\"},\"service\":\"uploaded\"}]}"
     http_version: 
-  recorded_at: Thu, 06 Dec 2012 12:12:48 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:32 GMT
 - request: 
     method: post
-    uri: https://api.getchute.com/v2/albums/2331851/assets/79517672/votes
+    uri: https://api.getchute.com/v2/albums/2336719/assets/79517672/votes
     body: 
       encoding: UTF-8
       string: "{}"
@@ -165,19 +165,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Thu, 06 Dec 2012 12:12:43 GMT
+      - Thu, 13 Dec 2012 14:42:25 GMT
       Etag: 
-      - "\"86a4970ec83a0d9fd691d947a5eda13d\""
+      - "\"797a39754a7445a4004627e3b84e5c1a\""
       Last-Modified: 
-      - Thu, 06 Dec 2012 12:12:43 GMT
+      - Thu, 13 Dec 2012 14:42:24 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "201"
       X-Available-Hourly-Calls: 
-      - "4975"
+      - "4950"
       X-Available-Monthly-Calls: 
-      - "3719847"
+      - "3719763"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -187,9 +187,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 4e10dd8c42101dc0133cabd5d0ffc08d
+      - 2a7eb767679fbcac0ee3ef4393b2fefc
       X-Runtime: 
-      - "0.042294"
+      - "0.297876"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -198,12 +198,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Vote Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums/2331851/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719847,\"max_hourly_calls\":5000,\"available_hourly_calls\":4975}},\"data\":{\"id\":2,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/votes/2\",\"title\":\"Vote Details\"}},\"created_at\":\"2012-12-06T12:12:43Z\",\"updated_at\":\"2012-12-06T12:12:43Z\",\"identifier\":\"lsubvahapukqrpaodopu1354795963\",\"album_id\":2331851,\"asset_id\":79517672}}"
+      string: "{\"response\":{\"title\":\"Vote Details\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums/2336719/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719763,\"max_hourly_calls\":5000,\"available_hourly_calls\":4950}},\"data\":{\"id\":4,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/votes/4\",\"title\":\"Vote Details\"}},\"created_at\":\"2012-12-13T14:42:24Z\",\"updated_at\":\"2012-12-13T14:42:24Z\",\"identifier\":\"rgytdspgrnygapriyedh1355409744\",\"album_id\":2336719,\"asset_id\":79517672}}"
     http_version: 
-  recorded_at: Thu, 06 Dec 2012 12:12:49 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:34 GMT
 - request: 
     method: get
-    uri: https://api.getchute.com/v2/albums/2331851/assets/79517672/votes
+    uri: https://api.getchute.com/v2/albums/2336719/assets/79517672/votes
     body: 
       encoding: UTF-8
       string: "{}"
@@ -232,17 +232,17 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Thu, 06 Dec 2012 12:12:44 GMT
+      - Thu, 13 Dec 2012 14:42:26 GMT
       Etag: 
-      - "\"01a0f9372bb1bdc8a7bc53e1cce6fc65\""
+      - "\"4f4022aa36c6c3216debe629b842ecbc\""
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "201"
       X-Available-Hourly-Calls: 
-      - "4974"
+      - "4949"
       X-Available-Monthly-Calls: 
-      - "3719846"
+      - "3719762"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -252,9 +252,9 @@ http_interactions:
       X-Rack-Cache: 
       - miss
       X-Request-Id: 
-      - 9159a136d5841efee2190127095f8178
+      - 8500f98ceb7893ced5171685857ee044
       X-Runtime: 
-      - "0.038833"
+      - "0.092877"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -263,12 +263,12 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Vote Count\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums/2331851/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719846,\"max_hourly_calls\":5000,\"available_hourly_calls\":4974}},\"data\":{\"count\":1}}"
+      string: "{\"response\":{\"title\":\"Vote Count\",\"version\":2,\"code\":201,\"href\":\"https://api.getchute.com/v2/albums/2336719/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719762,\"max_hourly_calls\":5000,\"available_hourly_calls\":4949}},\"data\":{\"count\":1}}"
     http_version: 
-  recorded_at: Thu, 06 Dec 2012 12:12:50 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:34 GMT
 - request: 
     method: delete
-    uri: https://api.getchute.com/v2/albums/2331851/assets/79517672/votes
+    uri: https://api.getchute.com/v2/albums/2336719/assets/79517672/votes
     body: 
       encoding: UTF-8
       string: "{}"
@@ -297,17 +297,17 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Thu, 06 Dec 2012 12:13:23 GMT
+      - Thu, 13 Dec 2012 14:42:27 GMT
       Etag: 
-      - "\"5bff050435f6c6facc53a45e12a0f3ac\""
+      - "\"67e01c8773559fd3f7f0ca5863707ab8\""
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4973"
+      - "4948"
       X-Available-Monthly-Calls: 
-      - "3719845"
+      - "3719761"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -317,9 +317,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - d5e023dd80e71bce6ad1416f5c20e6f2
+      - abb7cbff2982e720c8cbef6a3041f438
       X-Runtime: 
-      - "0.079968"
+      - "0.070745"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -328,7 +328,7 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Heart Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2331851/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719845,\"max_hourly_calls\":5000,\"available_hourly_calls\":4973}}}"
+      string: "{\"response\":{\"title\":\"Heart Deleted\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2336719/assets/79517672/votes?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719761,\"max_hourly_calls\":5000,\"available_hourly_calls\":4948}}}"
     http_version: 
-  recorded_at: Thu, 06 Dec 2012 12:13:27 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:36 GMT
 recorded_with: VCR 2.2.5

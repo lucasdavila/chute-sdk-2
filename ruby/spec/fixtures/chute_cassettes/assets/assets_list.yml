@@ -29,19 +29,19 @@ http_interactions:
       Cache-Control: 
       - must-revalidate, private, max-age=0
       Content-Type: 
-      - application/json; charset=utf-8
+      - text/html; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 11:04:12 GMT
+      - Thu, 13 Dec 2012 14:42:04 GMT
       Etag: 
-      - "\"7ce977ad85425936f50d9a9ce92b245e\""
+      - "\"a5ff418b6f9d9a36c9cd2679eb7cd7ec\""
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4999"
+      - "4966"
       X-Available-Monthly-Calls: 
-      - "3719962"
+      - "3719779"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -51,9 +51,9 @@ http_interactions:
       X-Rack-Cache: 
       - miss
       X-Request-Id: 
-      - d3515cf6b60dbe0bddefb22fb4fa082f
+      - fc79d2a316f932713fc3aa1d5f63e045
       X-Runtime: 
-      - "7.633541"
+      - "0.152172"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Content-Length: 
@@ -62,7 +62,7 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2327121/assets?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719962,\"max_hourly_calls\":5000,\"available_hourly_calls\":4999}},\"data\":[],\"pagination\":{\"current_page\":1,\"next_page\":\"https://api.getchute.com/v2/albums/2327121/assets?&page=2\",\"previous_page\":null,\"first_page\":\"https://api.getchute.com/v2/albums/2327121/assets?\",\"per_page\":5}}"
+      string: "{\"response\":{\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/albums/2327121/assets?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719779,\"max_hourly_calls\":5000,\"available_hourly_calls\":4966}},\"data\":[],\"pagination\":{\"current_page\":1,\"next_page\":\"https://api.getchute.com/v2/albums/2327121/assets?&page=2\",\"previous_page\":null,\"first_page\":\"https://api.getchute.com/v2/albums/2327121/assets?\",\"per_page\":5}}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 11:04:37 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:13 GMT
 recorded_with: VCR 2.2.5

@@ -31,19 +31,19 @@ http_interactions:
       Content-Type: 
       - application/json; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 11:35:13 GMT
+      - Thu, 13 Dec 2012 14:42:33 GMT
       Etag: 
       - "\"c9ca3f955bdf76e7d7643d1e2bd29108\""
       Last-Modified: 
-      - Wed, 28 Nov 2012 11:12:02 GMT
+      - Wed, 28 Nov 2012 12:13:46 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "4993"
+      - "4964"
       X-Available-Monthly-Calls: 
-      - "3719956"
+      - "3719777"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -53,9 +53,9 @@ http_interactions:
       X-Rack-Cache: 
       - invalidate, pass
       X-Request-Id: 
-      - 67dc34db36cab3ced6b35174831c93c8
+      - 1f3cb74ce9a15d413447c888e6b5c96c
       X-Runtime: 
-      - "0.069546"
+      - "0.074663"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
       Transfer-Encoding: 
@@ -64,9 +64,9 @@ http_interactions:
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fwww.wix.com%2Fblog%2Fwp-content%2Fuploads%2F2012%2F08%2FHowToGoBeyondStockPhotoCliches.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719956,\"max_hourly_calls\":5000,\"available_hourly_calls\":4993}},\"data\":[{\"id\":71907823,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907823\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T11:12:02Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvBzgbp/75x75\",\"url\":\"http://media.getchute.com/media/4RIvBzgbp\",\"shortcut\":\"4RIvBzgbp\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvBzgbp\"},\"service\":\"uploaded\"}]}"
+      string: "{\"response\":{\"title\":\"Imported Assets\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fwww.wix.com%2Fblog%2Fwp-content%2Fuploads%2F2012%2F08%2FHowToGoBeyondStockPhotoCliches.jpg\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719777,\"max_hourly_calls\":5000,\"available_hourly_calls\":4964}},\"data\":[{\"id\":71907823,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907823\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T12:13:46Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvBzgbp/75x75\",\"url\":\"http://media.getchute.com/media/4RIvBzgbp\",\"shortcut\":\"4RIvBzgbp\",\"type\":\"image\",\"caption\":\"New Asset Title\",\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvBzgbp\"},\"service\":\"uploaded\"}]}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 11:35:31 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:15 GMT
 - request: 
     method: get
     uri: https://api.getchute.com/v2/assets/71907823
@@ -96,21 +96,21 @@ http_interactions:
       Cache-Control: 
       - must-revalidate, private, max-age=0
       Content-Type: 
-      - application/json; charset=utf-8
+      - text/html; charset=utf-8
       Date: 
-      - Wed, 28 Nov 2012 12:06:28 GMT
+      - Thu, 13 Dec 2012 14:42:34 GMT
       Etag: 
       - "\"c9ca3f955bdf76e7d7643d1e2bd29108\""
       Last-Modified: 
-      - Wed, 28 Nov 2012 11:12:02 GMT
+      - Wed, 28 Nov 2012 12:13:46 GMT
       Server: 
       - nginx/1.2.4 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status: 
       - "200"
       X-Available-Hourly-Calls: 
-      - "5000"
+      - "4963"
       X-Available-Monthly-Calls: 
-      - "3719955"
+      - "3719776"
       X-Max-Hourly-Calls: 
       - "5000"
       X-Max-Monthly-Calls: 
@@ -120,18 +120,18 @@ http_interactions:
       X-Rack-Cache: 
       - miss
       X-Request-Id: 
-      - 333b82d53139d2436486d46d29fb196f
+      - 89f79b74f0393815c8abe6b28394aaec
       X-Runtime: 
-      - "0.058206"
+      - "0.037025"
       X-Ua-Compatible: 
       - IE=Edge,chrome=1
-      Content-Length: 
-      - "1406"
+      Transfer-Encoding: 
+      - chunked
       Connection: 
       - keep-alive
     body: 
       encoding: US-ASCII
-      string: "{\"response\":{\"title\":\"Asset Details\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/71907823?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719955,\"max_hourly_calls\":5000,\"available_hourly_calls\":5000}},\"data\":{\"id\":71907823,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907823\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T11:12:02Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvBzgbp/75x75\",\"url\":\"http://media.getchute.com/media/4RIvBzgbp\",\"shortcut\":\"4RIvBzgbp\",\"type\":\"image\",\"caption\":null,\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvBzgbp\"},\"service\":\"uploaded\",\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}}"
+      string: "{\"response\":{\"title\":\"Asset Details\",\"version\":2,\"code\":200,\"href\":\"https://api.getchute.com/v2/assets/71907823?\",\"api_limits\":{\"max_monthly_calls\":3720000,\"available_monthly_calls\":3719776,\"max_hourly_calls\":5000,\"available_hourly_calls\":4963}},\"data\":{\"id\":71907823,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/assets/71907823\",\"title\":\"Asset Details\"},\"exif\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/exif\",\"title\":\"Exif Details\"},\"geo\":{\"href\":\"http://api.getchute.com/v2/assets/71907823/geo\",\"title\":\"Geo Details\"}},\"created_at\":\"2012-11-28T11:12:02Z\",\"updated_at\":\"2012-11-28T12:13:46Z\",\"thumbnail\":\"http://media.getchute.com/media/4RIvBzgbp/75x75\",\"url\":\"http://media.getchute.com/media/4RIvBzgbp\",\"shortcut\":\"4RIvBzgbp\",\"type\":\"image\",\"caption\":\"New Asset Title\",\"dimensions\":{\"width\":null,\"height\":null},\"location\":null,\"source\":{\"source\":\"imported\",\"source_id\":null,\"source_url\":\"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg\",\"service\":null,\"import_id\":null,\"import_url\":null,\"original_url\":\"http://media.getchute.com/media/4RIvBzgbp\"},\"service\":\"uploaded\",\"user\":{\"id\":545,\"links\":{\"self\":{\"href\":\"http://api.getchute.com/v2/users/545\",\"title\":\"User Details\"}},\"created_at\":\"2012-01-17T19:53:39Z\",\"updated_at\":\"2012-09-15T10:55:51Z\",\"name\":\"darko1002001\",\"username\":\"darko1002001\",\"avatar\":\"http://static.getchute.com/v1/images/avatar-100x100.png\"}}}"
     http_version: 
-  recorded_at: Wed, 28 Nov 2012 12:06:45 GMT
+  recorded_at: Thu, 13 Dec 2012 14:42:16 GMT
 recorded_with: VCR 2.2.5
