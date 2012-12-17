@@ -1,3 +1,5 @@
+require 'chute/configuration'
+
 module Chute
   class Client
 
