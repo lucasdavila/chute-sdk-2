@@ -5,8 +5,8 @@ module Chute
 
     def self.with_code_and_error(code, error)
       object        = Chute::Response.new
-      object.response.code   = code
-      object.response.errors = [error]
+      object.code   = code
+      object.errors = [error]
       object
     end
 
