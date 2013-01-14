@@ -46,8 +46,8 @@ module Chute
           Chute::Client.get("/v2/albums/#{album_id}/stats")
         end
 
-        def add_assets(album_id, *shortcuts)
-          Chute::Client.post("/v2/albums/#{album_id}/add_assets", :shortcuts =>  shortcuts)
+        def add_assets(album_id, *asset_ids)
+          Chute::Client.post("/v2/albums/#{album_id}/add_assets", :asset_ids => asset_ids)
         end
 
         def remove_assets(album_id, *asset_ids)
