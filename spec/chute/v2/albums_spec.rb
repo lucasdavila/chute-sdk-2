@@ -85,19 +85,22 @@ describe Chute::V2::Albums do
     end
 
     describe "POST Album Create" do
-
-      before do
-        VCR.insert_cassette 'albums/albums_create', :record => :new_episodes
-      end
-      after do
-        VCR.eject_cassette
-      end
-
       it "should be able to create an album" do
+        VCR.insert_cassette 'albums/albums_create', :record => :new_episodes
         album = Hash.new
         album[:name] = "some album #{Time.now.to_s}"
         album[:moderate_comments] = true
         response = Chute::V2::Albums.create(album)
+        VCR.eject_cassette
+      end
+
+      it 'should respect permission_view' do
+        VCR.insert_cassette 'albums/album_create_with_permission_view', :record => :new_episodes
+        album = Hash.new
+        album[:name] = "some new album #{Time.now.to_s}"
+        album[:permission_view] = 2
+        response = Chute::V2::Albums.create(album)
+        VCR.eject_cassette
       end
     end
 

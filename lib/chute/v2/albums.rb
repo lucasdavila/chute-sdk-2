@@ -29,12 +29,12 @@ module Chute
 
         # Album Create
         def create(album)
-          Chute::Client.post("/v2/albums", album)
+          Chute::Client.post("/v2/albums", :album => album)
         end
 
         # Album Update
         def update(id, album={})
-          Chute::Client.put("/v2/albums/#{id}", album)
+          Chute::Client.put("/v2/albums/#{id}", :album => album)
         end
 
         # Album Delete
