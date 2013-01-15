@@ -21,7 +21,7 @@ module Chute
     end
 
     def self.request(request_type, url, body="")
-      body = JSON.unparse(body) unless String === body
+      body = body.to_json unless String === body
       options = body.empty? ? {:headers => headers} : {:headers => headers, :body => body}
       begin
         response = self.send(request_type, "#{base_uri}#{url}", options)
@@ -34,7 +34,6 @@ module Chute
 =end
 
         parse(response)
-
       rescue Errno::ECONNREFUSED
         p 'Service Unavailable'
         Chute::Response.with_code_and_error(503, 'Service Unavailable')
@@ -50,7 +49,11 @@ module Chute
     end
 
     def self.parse(object)
-      Chute::Response.new(object)
+      if object.respond_to?(:each_pair)
+        Chute::Response.new(object)
+      else
+        [200, 201].include?(object.code)
+      end
     end
   end
 
