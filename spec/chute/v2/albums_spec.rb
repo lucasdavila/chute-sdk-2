@@ -8,7 +8,8 @@ describe Chute::V2::Albums do
 
     describe ".all" do
       it { Chute::V2::Albums.should respond_to(:all).with(0).arguments }
-      it { Chute::V2::Albums.should_not respond_to(:all).with(1).arguments }
+      it { Chute::V2::Albums.should respond_to(:all).with(1).arguments }
+      it { Chute::V2::Albums.should respond_to(:all).with(2).arguments }
     end
 
     describe ".find" do

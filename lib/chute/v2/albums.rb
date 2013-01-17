@@ -3,8 +3,8 @@ module Chute
     class Albums
       class << self
         # Album Listing
-        def all
-          Chute::Client.get("/v2/albums")
+        def all(page=nil, per_page=nil)
+          Chute::Client.get("/v2/albums", :page=> page, :per_page=> per_page)
         end
 
         # Album Details
