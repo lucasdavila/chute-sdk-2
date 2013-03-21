@@ -13,7 +13,6 @@ module Chute
     DEFAULT_APP_SECRET      = 'app_secret'
     DEFAULT_ACCESS_TOKEN    = 'access_token'
 
-
     attr_accessor *VALID_CONFIG_KEYS
 
     def options
