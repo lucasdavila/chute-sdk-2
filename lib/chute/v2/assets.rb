@@ -32,10 +32,7 @@ module Chute
           Chute::Client.post("/v2/assets/upload", :urls => urls)
         end
 
-        def import(urls, shortcuts)
-          params = Hash.new
-          params[:urls] = urls unless urls==nil
-          params[:shortcuts] = shortcuts unless shortcuts==nil
+        def import(params)
           Chute::Client.post("/v2/assets/import", params)
         end
 
