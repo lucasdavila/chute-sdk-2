@@ -86,23 +86,15 @@ describe Chute::V2::Assets do
     describe "POST Asset Import" do
 
       before do
+        VCR.insert_cassette 'assets/assets_import', :record => :new_episodes
       end
       after do
         VCR.eject_cassette
       end
 
       it "should be able to import assets from urls" do
-        VCR.insert_cassette 'assets/assets_import', :record => :new_episodes
-        response = Chute::V2::Assets.import({urls: @asset_urls})
+        response = Chute::V2::Assets.import(@asset_urls,nil)
         response.data.map { |a| @asset_urls.include?(a.source.source_url).should==true }
-        VCR.eject_cassette
-      end
-
-      it "should be able to include an album_id when importing" do
-        VCR.insert_cassette 'assets/assets_import_with_album_id', :record => :new_episodes
-        response = Chute::V2::Assets.import({urls: @asset_urls, album_id: "2327121"})
-        response.data.map { |a| (a.links.self.href =~ /2327121/).should_not be_nil }
-        VCR.eject_cassette
       end
 
     end
@@ -116,7 +108,7 @@ describe Chute::V2::Assets do
       end
 
       it "should retrieve asset by its id" do
-        response = Chute::V2::Assets.import({urls: @asset_urls[0]})
+        response = Chute::V2::Assets.import(@asset_urls[0],nil)
         id = response.data[0].id
         response = Chute::V2::Assets.find(id)
         response.data.id.should == id
@@ -133,7 +125,7 @@ describe Chute::V2::Assets do
       end
 
       it "should be able to update an assets title" do
-        response = Chute::V2::Assets.import({urls: @asset_urls[0]})
+        response = Chute::V2::Assets.import(@asset_urls[0],nil)
         caption = "New Asset Title"
         response = Chute::V2::Assets.update(response.data[0].id, :caption => caption)
         response.data.caption.should == caption
@@ -151,7 +143,7 @@ describe Chute::V2::Assets do
       end
 
       it "should be able to delete an asset" do
-        response = Chute::V2::Assets.import({urls: @asset_url})
+        response = Chute::V2::Assets.import(@asset_url,nil)
         response = Chute::V2::Assets.delete(response.data[0].id)
         response.success?.should == true
       end
@@ -159,7 +151,7 @@ describe Chute::V2::Assets do
 
     describe "GET geo for asset" do
 
-      let(:import_assets) { Chute::V2::Assets.import({urls: @asset_urls}) }
+      let(:import_assets) { Chute::V2::Assets.import(@asset_urls,nil) }
 
       before do
         VCR.insert_cassette 'assets/assets_geo', :record => :new_episodes
