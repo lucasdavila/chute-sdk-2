@@ -1,0 +1,187 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums
+    body:
+      encoding: UTF-8
+      string: ! '{"album":{"name":"Created Album"}}'
+    headers:
+      Authorization:
+      - OAuth API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Mon, 08 Apr 2013 22:53:55 GMT
+      Etag:
+      - ! '"2e71d002c327629ac8035c6abfa30272"'
+      Last-Modified:
+      - Mon, 08 Apr 2013 22:53:55 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Available-Hourly-Calls:
+      - '4999898'
+      X-Available-Monthly-Calls:
+      - '3719999839'
+      X-Max-Hourly-Calls:
+      - '5000000'
+      X-Max-Monthly-Calls:
+      - '3720000000'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 53646ae3430c52e590b01c5360acb460
+      X-Runtime:
+      - '0.031950'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Created+Album","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999839,"max_hourly_calls":5000000,"available_hourly_calls":4999898}},"data":{"id":2406197,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406197","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406197/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406197/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-08T22:53:55Z","updated_at":"2013-04-08T22:53:55Z","shortcut":"a5XDnwkc","name":"Created
+        Album","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
+    http_version: 
+  recorded_at: Mon, 08 Apr 2013 22:53:55 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums/2406197/add_assets
+    body:
+      encoding: UTF-8
+      string: ! '{"asset_ids":[[71907823]]}'
+    headers:
+      Authorization:
+      - OAuth API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 08 Apr 2013 22:53:56 GMT
+      Etag:
+      - ! '"7215ee9c7d9dc229d2921a40e899ec5f"'
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Available-Hourly-Calls:
+      - '4999897'
+      X-Available-Monthly-Calls:
+      - '3719999838'
+      X-Max-Hourly-Calls:
+      - '5000000'
+      X-Max-Monthly-Calls:
+      - '3720000000'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 58848554971f6eaef6657b7be15d6e09
+      X-Runtime:
+      - '0.173735'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! ' '
+    http_version: 
+  recorded_at: Mon, 08 Apr 2013 22:53:56 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums/2406197/remove_assets
+    body:
+      encoding: UTF-8
+      string: ! '{"asset_ids":[[4342325,4342324,534543]]}'
+    headers:
+      Authorization:
+      - OAuth API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 08 Apr 2013 22:53:57 GMT
+      Etag:
+      - ! '"7215ee9c7d9dc229d2921a40e899ec5f"'
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Available-Hourly-Calls:
+      - '4999895'
+      X-Available-Monthly-Calls:
+      - '3719999836'
+      X-Max-Hourly-Calls:
+      - '5000000'
+      X-Max-Monthly-Calls:
+      - '3720000000'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 2cc6f00ca116fb27bb6f0ee7b67b5bd2
+      X-Runtime:
+      - '0.028256'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '1'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! ' '
+    http_version: 
+  recorded_at: Mon, 08 Apr 2013 22:53:57 GMT
+recorded_with: VCR 2.2.5
