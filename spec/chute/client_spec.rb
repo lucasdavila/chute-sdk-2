@@ -60,6 +60,15 @@ describe Chute::Client do
 
   end
 
+  describe '#as' do
+    it 'should set the token for the duration of the block' do
+      Chute.as 'abc' do
+        Chute.access_token.should == 'abc'
+      end
+      Chute.access_token.should_not == 'abc'
+    end
+  end
+
   describe "client request methods" do
 
     [:get, :post, :put, :delete].each do |req_type|

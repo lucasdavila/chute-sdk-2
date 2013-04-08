@@ -1,6 +1,17 @@
 require 'chute/configuration'
 
 module Chute
+  def self.as(token, &block)
+    temp_token = Chute.access_token
+    Chute.configure do |config|
+      config.access_token = token
+    end
+    yield block
+    Chute.configure do |config|
+      config.access_token = temp_token
+    end
+  end
+
   class Client
 
     class << self
