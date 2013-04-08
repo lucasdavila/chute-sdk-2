@@ -73,14 +73,7 @@ describe Chute::V2::Assets do
       it "should be able to list all assets in an album" do
         response = list_assets
         response.data.should_not == nil
-
       end
-
-      it "should contain pagination" do
-        response = list_assets
-        response.pagination.should_not ==nil
-      end
-
     end
 
     describe "POST Asset Import" do

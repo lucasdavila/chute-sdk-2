@@ -22,4 +22,6 @@ VCR.configure do |c|
   c.ignore_localhost = true
   c.cassette_library_dir = 'spec/fixtures/chute_cassettes'
   c.hook_into :webmock # or :fakeweb
+  c.filter_sensitive_data('API KEY') { Chute.access_token }
+  c.allow_http_connections_when_no_cassette = false
 end

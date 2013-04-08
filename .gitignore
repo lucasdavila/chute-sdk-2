@@ -6,3 +6,4 @@ pkg/*
 coverage/*
 spec/coverage.data
 .idea/
+spec/support/authorization.rb
