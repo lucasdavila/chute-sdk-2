@@ -80,8 +80,7 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/users/users_get.yml",
     "spec/fixtures/chute_cassettes/users/users_me.yml",
     "spec/fixtures/chute_cassettes/votes/votes_methods.yml",
-    "spec/spec_helper.rb",
-    "spec/support/authorization.rb"
+    "spec/spec_helper.rb"
   ]
   s.homepage = "http://github.com/darko1002001/chute"
   s.licenses = ["MIT"]
