@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
     "lib/chute/v2/triggers.rb",
     "lib/chute/v2/users.rb",
     "lib/chute/v2/votes.rb",
+    "lib/chute/version.rb",
     "spec/chute/chute_spec.rb",
     "spec/chute/client_spec.rb",
     "spec/chute/connection_spec.rb",
