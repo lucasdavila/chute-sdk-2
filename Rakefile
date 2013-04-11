@@ -25,7 +25,6 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Darko Grozdanovski","Chris Burkhart","Petr Bela"]
   gem.version = Chute::Version::STRING
   # dependencies defined in Gemfile
-  gem.add_dependency 'httparty'
 end
 Jeweler::RubygemsDotOrgTasks.new
 
