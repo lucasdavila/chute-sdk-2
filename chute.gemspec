@@ -8,10 +8,10 @@ Gem::Specification.new do |s|
   s.version = "2.0.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Darko Grozdanovski"]
-  s.date = "2012-12-17"
+  s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
+  s.date = "2013-04-11"
   s.description = "wrapper for the API for getchute.com"
-  s.email = "darkogrozdanovski@gmail.com"
+  s.email = "support@gmail.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.md"
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
     "README.md",
     "Rakefile",
     "VERSION",
+    "chute.gemspec",
     "lib/chute.rb",
     "lib/chute/client.rb",
     "lib/chute/configuration.rb",
@@ -52,6 +53,7 @@ Gem::Specification.new do |s|
     "spec/chute/v2/trigger_spec.rb",
     "spec/chute/v2/users_spec.rb",
     "spec/chute/v2/votes_spec.rb",
+    "spec/fixtures/chute_cassettes/albums/album_create_with_permission_view.yml",
     "spec/fixtures/chute_cassettes/albums/albums_add_remove_assets.yml",
     "spec/fixtures/chute_cassettes/albums/albums_create.yml",
     "spec/fixtures/chute_cassettes/albums/albums_delete.yml",
@@ -66,7 +68,6 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/assets/assets_list.yml",
     "spec/fixtures/chute_cassettes/assets/assets_update.yml",
     "spec/fixtures/chute_cassettes/comments/comments_create.yml",
-    # "spec/fixtures/chute_cassettes/comments/comments_delete.yml",
     "spec/fixtures/chute_cassettes/comments/comments_list.yml",
     "spec/fixtures/chute_cassettes/flags/flags_methods.yml",
     "spec/fixtures/chute_cassettes/hearts/hearts_methods.yml",
@@ -82,10 +83,10 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/votes/votes_methods.yml",
     "spec/spec_helper.rb"
   ]
-  s.homepage = "http://github.com/darko1002001/chute"
+  s.homepage = "https://github.com/chute/chute-sdk-2"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.24"
+  s.rubygems_version = "1.8.25"
   s.summary = "getchute API wrapper"
 
   if s.respond_to? :specification_version then
@@ -93,8 +94,6 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
-      s.add_runtime_dependency(%q<rails>, [">= 3.2.11"])
-      s.add_runtime_dependency(%q<json>, [">= 0"])
       s.add_runtime_dependency(%q<hashie>, [">= 0"])
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
@@ -104,8 +103,6 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
     else
       s.add_dependency(%q<httparty>, [">= 0"])
-      s.add_dependency(%q<rails>, [">= 3.2.11"])
-      s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<hashie>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
@@ -116,8 +113,6 @@ Gem::Specification.new do |s|
     end
   else
     s.add_dependency(%q<httparty>, [">= 0"])
-    s.add_dependency(%q<rails>, [">= 3.2.11"])
-    s.add_dependency(%q<json>, [">= 0"])
     s.add_dependency(%q<hashie>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])

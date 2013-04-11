@@ -12,15 +12,18 @@ end
 require 'rake'
 
 require 'jeweler'
+require './lib/chute/version.rb'
+
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "chute"
-  gem.homepage = "http://github.com/darko1002001/chute"
+  gem.homepage = "https://github.com/chute/chute-sdk-2"
   gem.license = "MIT"
   gem.summary = %Q{getchute API wrapper}
   gem.description = %Q{wrapper for the API for getchute.com}
-  gem.email = "darkogrozdanovski@gmail.com"
-  gem.authors = ["Darko Grozdanovski"]
+  gem.email = "support@gmail.com"
+  gem.authors = ["Darko Grozdanovski","Chris Burkhart","Petr Bela"]
+  gem.version = Chute::Version::STRING
   # dependencies defined in Gemfile
   gem.add_dependency 'httparty'
 end
