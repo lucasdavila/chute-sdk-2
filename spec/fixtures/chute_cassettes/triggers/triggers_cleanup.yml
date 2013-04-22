@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,53 +25,45 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:19 GMT
+      - Mon, 22 Apr 2013 22:26:26 GMT
       Etag:
-      - ! '"17d5caec8e7adc56eeb9d38a7ac4b662"'
+      - ! '"a71bda56f89418650fb806ee5591d8e2"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:17 GMT
+      - Mon, 22 Apr 2013 22:26:24 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999853'
-      X-Available-Monthly-Calls:
-      - '3719999794'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - 7e357433fff3ddf90a63e34128468d44
+      - 7086a6e7d3c99ca166de02d4054ab823
       X-Runtime:
-      - '0.022416'
+      - '0.030596'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '619'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Trigger Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999794,"max_hourly_calls":5000000,"available_hourly_calls":4999853}},"data":[{"id":30,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/30","title":"Trigger
-        Details"}},"created_at":"2013-04-08T22:54:16Z","updated_at":"2013-04-08T22:54:16Z","url":"http://www.opencalais.com/HTTPexamples","event":"asset_created"},{"id":31,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/31","title":"Trigger
-        Details"}},"created_at":"2013-04-08T22:54:17Z","updated_at":"2013-04-08T22:54:17Z","url":"http://www.opencalais.com/HTTPexamples","event":"album_asset_moderated"}]}'
+      string: ! '{"response":{"title":"Trigger Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers?"},"data":[{"id":36,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/36","title":"Trigger
+        Details"}},"created_at":"2013-04-22T22:26:23Z","updated_at":"2013-04-22T22:26:23Z","url":"http://www.opencalais.com/HTTPexamples","event":"asset_created"},{"id":37,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/37","title":"Trigger
+        Details"}},"created_at":"2013-04-22T22:26:23Z","updated_at":"2013-04-22T22:26:24Z","url":"http://www.opencalais.com/HTTPexamples","event":"album_asset_moderated"}]}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:19 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:26 GMT
 - request:
     method: delete
-    uri: https://api.getchute.com/v2/triggers/30
+    uri: https://api.getchute.com/v2/triggers/36
     body:
       encoding: UTF-8
       string: ! '{}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -88,49 +80,41 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:20 GMT
+      - Mon, 22 Apr 2013 22:26:26 GMT
       Etag:
-      - ! '"16f79548df7f5d59ef1f8e68418e803f"'
+      - ! '"c8f8c53fcc291a58d62d5277b0d78371"'
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999852'
-      X-Available-Monthly-Calls:
-      - '3719999793'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 223dec93f4e9ebc898b6d109956ca9d3
+      - 41da88d5d6b8ff2153f10fdda423f2d8
       X-Runtime:
-      - '0.019346'
+      - '0.037769'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '256'
+      - '113'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Trigger Deleted","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/30?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999793,"max_hourly_calls":5000000,"available_hourly_calls":4999852}}}'
+      string: ! '{"response":{"title":"Trigger Deleted","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/36?"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:20 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:26 GMT
 - request:
     method: delete
-    uri: https://api.getchute.com/v2/triggers/31
+    uri: https://api.getchute.com/v2/triggers/37
     body:
       encoding: UTF-8
       string: ! '{}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -147,38 +131,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:20 GMT
+      - Mon, 22 Apr 2013 22:26:27 GMT
       Etag:
-      - ! '"cc89b69ac296c15d0a8448ce9c2f6131"'
+      - ! '"cf62525e6a760b4f771cc84e44822db1"'
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999851'
-      X-Available-Monthly-Calls:
-      - '3719999792'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - a1a2d0708b2b41ef4174bee6e1e55771
+      - 6f2f29212edb926cd3f3b06bbae91a90
       X-Runtime:
-      - '0.019939'
+      - '0.036242'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '256'
+      - '113'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Trigger Deleted","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/31?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999792,"max_hourly_calls":5000000,"available_hourly_calls":4999851}}}'
+      string: ! '{"response":{"title":"Trigger Deleted","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/37?"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:20 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:27 GMT
 recorded_with: VCR 2.2.5

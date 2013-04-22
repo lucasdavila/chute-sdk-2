@@ -13,7 +13,7 @@ module Chute
 
     def self.headers
       {
-          'Authorization' => "OAuth #{Chute.access_token}",
+          'Authorization' => "Bearer #{Chute.access_token}",
           'Content-Type' => 'application/json',
           'Accepts' => 'application/json',
           'x-client_id' => Chute.app_id

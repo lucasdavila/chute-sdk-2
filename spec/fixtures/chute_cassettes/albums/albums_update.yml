@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"album":{"name":"Created Album"}}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,31 +25,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:53:52 GMT
+      - Mon, 22 Apr 2013 22:25:58 GMT
       Etag:
-      - ! '"0b89248480a8f026147466a353617b5c"'
+      - ! '"404a5e6de4cf9ed1ee40ac8d78e6783f"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:53:52 GMT
+      - Mon, 22 Apr 2013 22:25:58 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999905'
-      X-Available-Monthly-Calls:
-      - '3719999846'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 25d60ed62aa4565856a06e7080ce3ab1
+      - c48e8abbfec7f960c5ffbed20b53eda1
       X-Runtime:
-      - '0.034835'
+      - '0.054299'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -58,23 +50,23 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Created+Album","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999846,"max_hourly_calls":5000000,"available_hourly_calls":4999905}},"data":{"id":2406194,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406194","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406194/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406194/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:53:52Z","updated_at":"2013-04-08T22:53:52Z","shortcut":"a5XAnyec","name":"Created
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Created+Album"},"data":{"id":2412449,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412449","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412449/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412449/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:25:58Z","updated_at":"2013-04-22T22:25:58Z","shortcut":"a7Atjblz","name":"Created
         Album","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:53:52 GMT
+  recorded_at: Mon, 22 Apr 2013 22:25:58 GMT
 - request:
     method: put
-    uri: https://api.getchute.com/v2/albums/2406194
+    uri: https://api.getchute.com/v2/albums/2412449
     body:
       encoding: UTF-8
       string: ! '{"album":{"name":"Updated Album"}}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -91,31 +83,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:53:53 GMT
+      - Mon, 22 Apr 2013 22:25:59 GMT
       Etag:
-      - ! '"0b89248480a8f026147466a353617b5c"'
+      - ! '"404a5e6de4cf9ed1ee40ac8d78e6783f"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:53:53 GMT
+      - Mon, 22 Apr 2013 22:25:59 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999904'
-      X-Available-Monthly-Calls:
-      - '3719999845'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - dbea9cf86b3763c2bba8557afce79248
+      - a2e3c2547ccfa9323641537c6a431839
       X-Runtime:
-      - '0.053786'
+      - '0.067417'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -124,12 +108,12 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Album Details","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2406194?album%5Bname%5D=Updated+Album","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999845,"max_hourly_calls":5000000,"available_hourly_calls":4999904}},"data":{"id":2406194,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406194","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406194/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406194/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:53:52Z","updated_at":"2013-04-08T22:53:53Z","shortcut":"a5XAnyec","name":"Updated
+      string: ! '{"response":{"title":"Album Details","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2412449?album%5Bname%5D=Updated+Album"},"data":{"id":2412449,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412449","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412449/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412449/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:25:58Z","updated_at":"2013-04-22T22:25:59Z","shortcut":"a7Atjblz","name":"Updated
         Album","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:53:53 GMT
+  recorded_at: Mon, 22 Apr 2013 22:25:59 GMT
 recorded_with: VCR 2.2.5

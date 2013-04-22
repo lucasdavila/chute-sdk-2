@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"page":null,"per_page":null}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,31 +25,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:53:49 GMT
+      - Mon, 22 Apr 2013 22:25:55 GMT
       Etag:
-      - ! '"7d7d97075218818f484ea5f92a9e56d6"'
+      - ! '"e389f2753dfd4db92fe114f0a411322e"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:28:03 GMT
+      - Mon, 22 Apr 2013 22:24:44 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999911'
-      X-Available-Monthly-Calls:
-      - '3719999852'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - 4248197f269802ab55c011cab1a11aeb
+      - 3ad7e4d1b04d0bb7c4d05f5a0b0237f6
       X-Runtime:
-      - '0.063589'
+      - '0.065093'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -58,32 +50,32 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Album Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/albums?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999852,"max_hourly_calls":5000000,"available_hourly_calls":4999911}},"data":[{"id":2406176,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406176","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406176/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406176/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:28:03Z","updated_at":"2013-04-08T22:28:03Z","shortcut":"a5Xigefp","name":"Album
+      string: ! '{"response":{"title":"Album Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/albums?"},"data":[{"id":2412445,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412445","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412445/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412445/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:24:44Z","updated_at":"2013-04-22T22:24:44Z","shortcut":"a7Apduiy","name":"Album
         for Votes","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
-        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2406175,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406175","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406175/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406175/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:27:52Z","updated_at":"2013-04-08T22:27:52Z","shortcut":"a5Xhtcza","name":"Album
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2412444,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412444","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412444/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412444/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:24:34Z","updated_at":"2013-04-22T22:24:34Z","shortcut":"a7Aojgxw","name":"Album
         for Tags","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
-        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2406174,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406174","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406174/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406174/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:27:50Z","updated_at":"2013-04-08T22:27:50Z","shortcut":"a5Xgncfp","name":"Album
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2412443,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412443","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412443/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412443/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:24:32Z","updated_at":"2013-04-22T22:24:32Z","shortcut":"a7Anmrxf","name":"Album
         for Hearts","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
-        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2406173,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406173","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406173/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406173/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:27:44Z","updated_at":"2013-04-08T22:27:44Z","shortcut":"a5Xfdxbs","name":"Album
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2412442,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412442","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412442/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412442/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:24:29Z","updated_at":"2013-04-22T22:24:29Z","shortcut":"a7Amanwe","name":"Album
         for Flags","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
-        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2406172,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406172","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406172/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406172/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:27:42Z","updated_at":"2013-04-08T22:27:42Z","shortcut":"a5Xepfnd","name":"Album
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null},{"id":2412441,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412441","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412441/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412441/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:24:27Z","updated_at":"2013-04-22T22:24:27Z","shortcut":"a7Aldxna","name":"Album
         for Comments","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}],"pagination":{"current_page":1,"next_page":"https://api.getchute.com/v2/albums?&page=2","previous_page":null,"first_page":"https://api.getchute.com/v2/albums?","per_page":5}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:53:49 GMT
+  recorded_at: Mon, 22 Apr 2013 22:25:56 GMT
 recorded_with: VCR 2.2.5

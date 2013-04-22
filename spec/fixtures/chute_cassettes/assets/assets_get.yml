@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"urls":"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,31 +25,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:53:58 GMT
+      - Mon, 22 Apr 2013 22:26:04 GMT
       Etag:
       - ! '"c9ca3f955bdf76e7d7643d1e2bd29108"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:27:36 GMT
+      - Mon, 22 Apr 2013 22:24:20 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999892'
-      X-Available-Monthly-Calls:
-      - '3719999833'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 6ee842071732ac271bb5030411a75bf8
+      - f112e1c051e44b52de72edf91deea1c1
       X-Runtime:
-      - '0.038201'
+      - '0.066921'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -60,13 +52,13 @@ http_interactions:
       encoding: US-ASCII
       string: ! '{"response":{"title":"Imported Assets","warning":"Deprecated route:
         This will be disabled soon. Please include an album in the route to access
-        an asset.","version":2,"code":200,"href":"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fwww.wix.com%2Fblog%2Fwp-content%2Fuploads%2F2012%2F08%2FHowToGoBeyondStockPhotoCliches.jpg","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999833,"max_hourly_calls":5000000,"available_hourly_calls":4999892}},"data":[{"id":71907823,"links":{"self":{"href":"http://api.getchute.com/v2/assets/71907823","title":"Asset
+        an asset.","version":2,"code":200,"href":"https://api.getchute.com/v2/assets/import?&urls=http%3A%2F%2Fwww.wix.com%2Fblog%2Fwp-content%2Fuploads%2F2012%2F08%2FHowToGoBeyondStockPhotoCliches.jpg"},"data":[{"id":71907823,"links":{"self":{"href":"http://api.getchute.com/v2/assets/71907823","title":"Asset
         Details"},"exif":{"href":"http://api.getchute.com/v2/assets/71907823/exif","title":"Exif
         Details"},"geo":{"href":"http://api.getchute.com/v2/assets/71907823/geo","title":"Geo
-        Details"}},"created_at":"2012-11-28T11:12:02Z","updated_at":"2013-04-08T22:27:36Z","thumbnail":"http://media.getchute.com/media/4RIvBzgbp/75x75","url":"http://media.getchute.com/media/4RIvBzgbp","shortcut":"4RIvBzgbp","type":"image","caption":"New
+        Details"}},"created_at":"2012-11-28T11:12:02Z","updated_at":"2013-04-22T22:24:20Z","thumbnail":"http://media.getchute.com/media/4RIvBzgbp/75x75","url":"http://media.getchute.com/media/4RIvBzgbp","shortcut":"4RIvBzgbp","type":"image","caption":"New
         Asset Title","dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4RIvBzgbp"},"service":"uploaded"}]}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:53:58 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:04 GMT
 - request:
     method: get
     uri: https://api.getchute.com/v2/assets/71907823
@@ -75,7 +67,7 @@ http_interactions:
       string: ! '{}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -92,47 +84,39 @@ http_interactions:
       Content-Type:
       - text/html; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:53:59 GMT
+      - Mon, 22 Apr 2013 22:26:05 GMT
       Etag:
       - ! '"c9ca3f955bdf76e7d7643d1e2bd29108"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:27:36 GMT
+      - Mon, 22 Apr 2013 22:24:20 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999891'
-      X-Available-Monthly-Calls:
-      - '3719999832'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - aa79293dd8328de582ea18eba54b524d
+      - 2e7ff1a703451d307a4b77fb3edd8158
       X-Runtime:
-      - '0.025763'
+      - '0.148804'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '1561'
+      - '1418'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
       string: ! '{"response":{"title":"Asset Details","warning":"Deprecated route:
         This will be disabled soon. Please include an album in the route to access
-        an asset.","version":2,"code":200,"href":"https://api.getchute.com/v2/assets/71907823?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999832,"max_hourly_calls":5000000,"available_hourly_calls":4999891}},"data":{"id":71907823,"links":{"self":{"href":"http://api.getchute.com/v2/assets/71907823","title":"Asset
+        an asset.","version":2,"code":200,"href":"https://api.getchute.com/v2/assets/71907823?"},"data":{"id":71907823,"links":{"self":{"href":"http://api.getchute.com/v2/assets/71907823","title":"Asset
         Details"},"exif":{"href":"http://api.getchute.com/v2/assets/71907823/exif","title":"Exif
         Details"},"geo":{"href":"http://api.getchute.com/v2/assets/71907823/geo","title":"Geo
-        Details"}},"created_at":"2012-11-28T11:12:02Z","updated_at":"2013-04-08T22:27:36Z","thumbnail":"http://media.getchute.com/media/4RIvBzgbp/75x75","url":"http://media.getchute.com/media/4RIvBzgbp","shortcut":"4RIvBzgbp","type":"image","caption":"New
+        Details"}},"created_at":"2012-11-28T11:12:02Z","updated_at":"2013-04-22T22:24:20Z","thumbnail":"http://media.getchute.com/media/4RIvBzgbp/75x75","url":"http://media.getchute.com/media/4RIvBzgbp","shortcut":"4RIvBzgbp","type":"image","caption":"New
         Asset Title","dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://www.wix.com/blog/wp-content/uploads/2012/08/HowToGoBeyondStockPhotoCliches.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4RIvBzgbp"},"service":"uploaded","user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null}}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:53:59 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:05 GMT
 recorded_with: VCR 2.2.5

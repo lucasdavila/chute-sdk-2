@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"album":{"name":"Album for Comments"}}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,31 +25,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:03 GMT
+      - Mon, 22 Apr 2013 22:26:10 GMT
       Etag:
-      - ! '"ad62ede2eed4b42524e206a84e5a9688"'
+      - ! '"051043a8a6ed435018231941aa910803"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:03 GMT
+      - Mon, 22 Apr 2013 22:26:10 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999883'
-      X-Available-Monthly-Calls:
-      - '3719999824'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 60e7c072cdbf2aae1010caefce018458
+      - 6730806460f9241926c0baa0327e044c
       X-Runtime:
-      - '0.043499'
+      - '0.048064'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -58,23 +50,23 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Comments","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999824,"max_hourly_calls":5000000,"available_hourly_calls":4999883}},"data":{"id":2406198,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406198","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406198/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406198/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:54:03Z","updated_at":"2013-04-08T22:54:03Z","shortcut":"a5XEeqmc","name":"Album
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Comments"},"data":{"id":2412453,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412453","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412453/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412453/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:26:10Z","updated_at":"2013-04-22T22:26:10Z","shortcut":"a7Axvqws","name":"Album
         for Comments","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:04 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:10 GMT
 - request:
     method: post
-    uri: https://api.getchute.com/v2/albums/2406198/assets/import
+    uri: https://api.getchute.com/v2/albums/2412453/assets/import
     body:
       encoding: UTF-8
       string: ! '{"urls":["http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg"]}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -91,7 +83,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:04 GMT
+      - Mon, 22 Apr 2013 22:26:10 GMT
       Etag:
       - ! '"e109632f58397e26b953c827c1486da8"'
       Last-Modified:
@@ -100,22 +92,14 @@ http_interactions:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999882'
-      X-Available-Monthly-Calls:
-      - '3719999823'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - d6590eb3e44eb0c9a04292d139200c0d
+      - 7ac503b248181d9c1642619ab8987efc
       X-Runtime:
-      - '0.141879'
+      - '0.102061'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -124,21 +108,21 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Imported Assets","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2406198/assets/import?&urls%5B%5D=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999823,"max_hourly_calls":5000000,"available_hourly_calls":4999882}},"data":[{"id":72569916,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406198/assets/72569916","title":"Asset
-        Details"},"exif":{"href":"http://api.getchute.com/v2/albums/2406198/assets/72569916/exif","title":"Exif
-        Details"},"geo":{"href":"http://api.getchute.com/v2/albums/2406198/assets/72569916/geo","title":"Geo
-        Details"},"heart":{"href":"http://api.getchute.com/v2/albums/a5XEeqmc/assets/4UuKweohy/hearts","title":"Heart"},"vote":{"href":"http://api.getchute.com/v2/albums/a5XEeqmc/assets/4UuKweohy/votes","title":"Vote"}},"created_at":"2012-11-29T13:55:20Z","updated_at":"2012-11-29T13:55:20Z","thumbnail":"http://media.getchute.com/media/4UuKweohy/75x75","url":"http://media.getchute.com/media/4UuKweohy","shortcut":"4UuKweohy","type":"image","caption":null,"dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4UuKweohy"},"service":"uploaded"}]}'
+      string: ! '{"response":{"title":"Imported Assets","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2412453/assets/import?&urls%5B%5D=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg"},"data":[{"id":72569916,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412453/assets/72569916","title":"Asset
+        Details"},"exif":{"href":"http://api.getchute.com/v2/albums/2412453/assets/72569916/exif","title":"Exif
+        Details"},"geo":{"href":"http://api.getchute.com/v2/albums/2412453/assets/72569916/geo","title":"Geo
+        Details"},"heart":{"href":"http://api.getchute.com/v2/albums/a7Axvqws/assets/4UuKweohy/hearts","title":"Heart"},"vote":{"href":"http://api.getchute.com/v2/albums/a7Axvqws/assets/4UuKweohy/votes","title":"Vote"}},"created_at":"2012-11-29T13:55:20Z","updated_at":"2012-11-29T13:55:20Z","thumbnail":"http://media.getchute.com/media/4UuKweohy/75x75","url":"http://media.getchute.com/media/4UuKweohy","shortcut":"4UuKweohy","type":"image","caption":null,"dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4UuKweohy"},"service":"uploaded"}]}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:04 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:10 GMT
 - request:
     method: post
-    uri: https://api.getchute.com/v2/albums/2406198/assets/72569916/comments
+    uri: https://api.getchute.com/v2/albums/2412453/assets/72569916/comments
     body:
       encoding: UTF-8
       string: ! '{"comment_text":"Some random comment","name":"Darko","email":"random@someemail.com"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -155,42 +139,34 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:05 GMT
+      - Mon, 22 Apr 2013 22:26:11 GMT
       Etag:
-      - ! '"4283dafb1ba2a333e9a85d0c192effb7"'
+      - ! '"43bd80cee9457b8619be105bbf5c9f8f"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:05 GMT
+      - Mon, 22 Apr 2013 22:26:11 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999881'
-      X-Available-Monthly-Calls:
-      - '3719999822'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 617925c78f1a817fe4fc8c410d82724a
+      - 954f3804016e2d733d70a2565860a134
       X-Runtime:
-      - '0.063030'
+      - '0.068856'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '592'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Comment Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums/2406198/assets/72569916/comments?comment%5Bcomment_text%5D=Some+random+comment&comment%5Bemail%5D=random%40someemail.com&comment%5Bname%5D=Darko&comment_text=Some+random+comment&email=random%40someemail.com&name=Darko","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999822,"max_hourly_calls":5000000,"available_hourly_calls":4999881}},"data":{"id":687,"links":{"self":{"href":"http://api.getchute.com/v2/comments/687","title":"Comment
-        Details"}},"created_at":"2013-04-08T22:54:05Z","updated_at":"2013-04-08T22:54:05Z","comment_text":"Some
+      string: ! '{"response":{"title":"Comment Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums/2412453/assets/72569916/comments?comment%5Bcomment_text%5D=Some+random+comment&comment%5Bemail%5D=random%40someemail.com&comment%5Bname%5D=Darko&comment_text=Some+random+comment&email=random%40someemail.com&name=Darko"},"data":{"id":696,"links":{"self":{"href":"http://api.getchute.com/v2/comments/696","title":"Comment
+        Details"}},"created_at":"2013-04-22T22:26:11Z","updated_at":"2013-04-22T22:26:11Z","comment_text":"Some
         random comment","name":"Darko","email":"random@someemail.com"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:05 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:11 GMT
 recorded_with: VCR 2.2.5

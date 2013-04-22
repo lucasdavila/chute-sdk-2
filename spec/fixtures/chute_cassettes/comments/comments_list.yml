@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"album":{"name":"Album for Comments"}}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,31 +25,23 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:05 GMT
+      - Mon, 22 Apr 2013 22:26:12 GMT
       Etag:
-      - ! '"b6ae9efb087bea35b169ec0991b963fc"'
+      - ! '"fef5eb644e79181c81ebfb1cd1fd287a"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:05 GMT
+      - Mon, 22 Apr 2013 22:26:12 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999880'
-      X-Available-Monthly-Calls:
-      - '3719999821'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - a870c91990ee635405fcf917e4836a9e
+      - 7798c93ee9836b0a04d57a575760cff8
       X-Runtime:
-      - '0.032124'
+      - '0.160199'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -58,23 +50,23 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Comments","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999821,"max_hourly_calls":5000000,"available_hourly_calls":4999880}},"data":{"id":2406199,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406199","title":"Album
-        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2406199/assets","title":"Asset
-        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2406199/parcels","title":"Parcel
-        Listing"}},"created_at":"2013-04-08T22:54:05Z","updated_at":"2013-04-08T22:54:05Z","shortcut":"a5XFvmle","name":"Album
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums?album%5Bname%5D=Album+for+Comments"},"data":{"id":2412454,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412454","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2412454/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2412454/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-04-22T22:26:12Z","updated_at":"2013-04-22T22:26:12Z","shortcut":"a7Aygaki","name":"Album
         for Comments","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
         Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:05 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:12 GMT
 - request:
     method: post
-    uri: https://api.getchute.com/v2/albums/2406199/assets/import
+    uri: https://api.getchute.com/v2/albums/2412454/assets/import
     body:
       encoding: UTF-8
       string: ! '{"urls":["http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg"]}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -91,7 +83,7 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:06 GMT
+      - Mon, 22 Apr 2013 22:26:12 GMT
       Etag:
       - ! '"e109632f58397e26b953c827c1486da8"'
       Last-Modified:
@@ -100,22 +92,14 @@ http_interactions:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999879'
-      X-Available-Monthly-Calls:
-      - '3719999820'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 9fb44433ab8be77ee9f90437a9a5a15d
+      - 97e892545f7ed9520b2f9e1037818a95
       X-Runtime:
-      - '0.050220'
+      - '0.111108'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Transfer-Encoding:
@@ -124,21 +108,21 @@ http_interactions:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Imported Assets","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2406199/assets/import?&urls%5B%5D=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999820,"max_hourly_calls":5000000,"available_hourly_calls":4999879}},"data":[{"id":72569916,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2406199/assets/72569916","title":"Asset
-        Details"},"exif":{"href":"http://api.getchute.com/v2/albums/2406199/assets/72569916/exif","title":"Exif
-        Details"},"geo":{"href":"http://api.getchute.com/v2/albums/2406199/assets/72569916/geo","title":"Geo
-        Details"},"heart":{"href":"http://api.getchute.com/v2/albums/a5XFvmle/assets/4UuKweohy/hearts","title":"Heart"},"vote":{"href":"http://api.getchute.com/v2/albums/a5XFvmle/assets/4UuKweohy/votes","title":"Vote"}},"created_at":"2012-11-29T13:55:20Z","updated_at":"2012-11-29T13:55:20Z","thumbnail":"http://media.getchute.com/media/4UuKweohy/75x75","url":"http://media.getchute.com/media/4UuKweohy","shortcut":"4UuKweohy","type":"image","caption":null,"dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4UuKweohy"},"service":"uploaded"}]}'
+      string: ! '{"response":{"title":"Imported Assets","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2412454/assets/import?&urls%5B%5D=http%3A%2F%2Ffarm9.staticflickr.com%2F8194%2F8141607138_bfaea3afd9.jpg"},"data":[{"id":72569916,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2412454/assets/72569916","title":"Asset
+        Details"},"exif":{"href":"http://api.getchute.com/v2/albums/2412454/assets/72569916/exif","title":"Exif
+        Details"},"geo":{"href":"http://api.getchute.com/v2/albums/2412454/assets/72569916/geo","title":"Geo
+        Details"},"heart":{"href":"http://api.getchute.com/v2/albums/a7Aygaki/assets/4UuKweohy/hearts","title":"Heart"},"vote":{"href":"http://api.getchute.com/v2/albums/a7Aygaki/assets/4UuKweohy/votes","title":"Vote"}},"created_at":"2012-11-29T13:55:20Z","updated_at":"2012-11-29T13:55:20Z","thumbnail":"http://media.getchute.com/media/4UuKweohy/75x75","url":"http://media.getchute.com/media/4UuKweohy","shortcut":"4UuKweohy","type":"image","caption":null,"dimensions":{"width":null,"height":null},"location":null,"source":{"source":"imported","source_id":null,"source_url":"http://farm9.staticflickr.com/8194/8141607138_bfaea3afd9.jpg","service":null,"import_id":null,"import_url":null,"original_url":"http://media.getchute.com/media/4UuKweohy"},"service":"uploaded"}]}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:06 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:12 GMT
 - request:
     method: post
-    uri: https://api.getchute.com/v2/albums/2406199/assets/72569916/comments
+    uri: https://api.getchute.com/v2/albums/2412454/assets/72569916/comments
     body:
       encoding: UTF-8
       string: ! '{"comment_text":"My Test Comment for listing"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -155,53 +139,45 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:06 GMT
+      - Mon, 22 Apr 2013 22:26:13 GMT
       Etag:
-      - ! '"ccc735bd2d7fd82b0213e4fc19c36422"'
+      - ! '"2087bb1a63690629cdcec5cf9f385580"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:06 GMT
+      - Mon, 22 Apr 2013 22:26:13 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999878'
-      X-Available-Monthly-Calls:
-      - '3719999819'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 5c3cc33db978166aea680f9e005b6919
+      - a5972814534841e8da2829be2660bc3f
       X-Runtime:
-      - '0.033780'
+      - '0.056215'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '632'
+      - '489'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Comment Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums/2406199/assets/72569916/comments?comment%5Bcomment_text%5D=My+Test+Comment+for+listing&comment_text=My+Test+Comment+for+listing","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999819,"max_hourly_calls":5000000,"available_hourly_calls":4999878}},"data":{"id":688,"links":{"self":{"href":"http://api.getchute.com/v2/comments/688","title":"Comment
-        Details"}},"created_at":"2013-04-08T22:54:06Z","updated_at":"2013-04-08T22:54:06Z","comment_text":"My
+      string: ! '{"response":{"title":"Comment Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums/2412454/assets/72569916/comments?comment%5Bcomment_text%5D=My+Test+Comment+for+listing&comment_text=My+Test+Comment+for+listing"},"data":{"id":697,"links":{"self":{"href":"http://api.getchute.com/v2/comments/697","title":"Comment
+        Details"}},"created_at":"2013-04-22T22:26:13Z","updated_at":"2013-04-22T22:26:13Z","comment_text":"My
         Test Comment for listing","name":null,"email":null}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:06 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:13 GMT
 - request:
     method: get
-    uri: https://api.getchute.com/v2/albums/2406199/assets/72569916/comments
+    uri: https://api.getchute.com/v2/albums/2412454/assets/72569916/comments
     body:
       encoding: UTF-8
       string: ! '{}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -218,42 +194,34 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:07 GMT
+      - Mon, 22 Apr 2013 22:26:13 GMT
       Etag:
-      - ! '"ccc735bd2d7fd82b0213e4fc19c36422"'
+      - ! '"2087bb1a63690629cdcec5cf9f385580"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:06 GMT
+      - Mon, 22 Apr 2013 22:26:13 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999877'
-      X-Available-Monthly-Calls:
-      - '3719999818'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - miss
       X-Request-Id:
-      - 5f58de2fdf2ce48fae31254607826cf3
+      - 50e1d9aaa94fbe21cf80b6f6d1b9566d
       X-Runtime:
-      - '0.031899'
+      - '0.042378'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '707'
+      - '564'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Comment Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2406199/assets/72569916/comments?","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999818,"max_hourly_calls":5000000,"available_hourly_calls":4999877}},"data":[{"id":688,"links":{"self":{"href":"http://api.getchute.com/v2/comments/688","title":"Comment
-        Details"}},"created_at":"2013-04-08T22:54:06Z","updated_at":"2013-04-08T22:54:06Z","comment_text":"My
-        Test Comment for listing","name":null,"email":null}],"pagination":{"current_page":1,"next_page":null,"previous_page":null,"first_page":"https://api.getchute.com/v2/albums/2406199/assets/72569916/comments?","per_page":5}}'
+      string: ! '{"response":{"title":"Comment Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/albums/2412454/assets/72569916/comments?"},"data":[{"id":697,"links":{"self":{"href":"http://api.getchute.com/v2/comments/697","title":"Comment
+        Details"}},"created_at":"2013-04-22T22:26:13Z","updated_at":"2013-04-22T22:26:13Z","comment_text":"My
+        Test Comment for listing","name":null,"email":null}],"pagination":{"current_page":1,"next_page":null,"previous_page":null,"first_page":"https://api.getchute.com/v2/albums/2412454/assets/72569916/comments?","per_page":5}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:07 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:13 GMT
 recorded_with: VCR 2.2.5

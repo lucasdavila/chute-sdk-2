@@ -24,7 +24,7 @@ describe Chute::Connection do
     end
 
     it "must have Authorization set to Access Token value" do
-      Chute::Connection.headers["Authorization"].should == "OAuth #{Chute.access_token}"
+      Chute::Connection.headers["Authorization"].should == "Bearer #{Chute.access_token}"
     end
 
     it "must have the Content-Type header" do

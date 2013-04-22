@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"url":"http://www.opencalais.com/HTTPexamples","event":"asset_updated"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,52 +25,44 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:17 GMT
+      - Mon, 22 Apr 2013 22:26:23 GMT
       Etag:
-      - ! '"52ffb2b97ae5c6a11b99ec6409571240"'
+      - ! '"2b01cdf690be0182d66e29935912c97c"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:17 GMT
+      - Mon, 22 Apr 2013 22:26:23 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '201'
-      X-Available-Hourly-Calls:
-      - '4999858'
-      X-Available-Monthly-Calls:
-      - '3719999799'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 164a8c1ba1e5a78209f2827b48321f97
+      - 47d28944d7d284e5716f6d20a86910c9
       X-Runtime:
-      - '0.024615'
+      - '0.039931'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '673'
+      - '530'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Trigger Details","version":2,"code":201,"href":"https://api.getchute.com/v2/triggers?event=asset_updated&trigger%5Bevent%5D=asset_updated&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999799,"max_hourly_calls":5000000,"available_hourly_calls":4999858}},"data":{"id":31,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/31","title":"Trigger
-        Details"}},"created_at":"2013-04-08T22:54:17Z","updated_at":"2013-04-08T22:54:17Z","url":"http://www.opencalais.com/HTTPexamples","event":"asset_updated"}}'
+      string: ! '{"response":{"title":"Trigger Details","version":2,"code":201,"href":"https://api.getchute.com/v2/triggers?event=asset_updated&trigger%5Bevent%5D=asset_updated&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples"},"data":{"id":37,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/37","title":"Trigger
+        Details"}},"created_at":"2013-04-22T22:26:23Z","updated_at":"2013-04-22T22:26:23Z","url":"http://www.opencalais.com/HTTPexamples","event":"asset_updated"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:17 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:23 GMT
 - request:
     method: put
-    uri: https://api.getchute.com/v2/triggers/31
+    uri: https://api.getchute.com/v2/triggers/37
     body:
       encoding: UTF-8
       string: ! '{"url":"http://www.opencalais.com/HTTPexamples","event":"album_asset_moderated"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -87,41 +79,33 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:17 GMT
+      - Mon, 22 Apr 2013 22:26:24 GMT
       Etag:
-      - ! '"52ffb2b97ae5c6a11b99ec6409571240"'
+      - ! '"2b01cdf690be0182d66e29935912c97c"'
       Last-Modified:
-      - Mon, 08 Apr 2013 22:54:17 GMT
+      - Mon, 22 Apr 2013 22:26:24 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '200'
-      X-Available-Hourly-Calls:
-      - '4999857'
-      X-Available-Monthly-Calls:
-      - '3719999798'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 9f439275c20297ee59f5832fbb3c09da
+      - c5139342998b1455723566044ff90cd5
       X-Runtime:
-      - '0.094906'
+      - '0.042428'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '700'
+      - '557'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
-      string: ! '{"response":{"title":"Trigger Details","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/31?event=album_asset_moderated&trigger%5Bevent%5D=album_asset_moderated&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999798,"max_hourly_calls":5000000,"available_hourly_calls":4999857}},"data":{"id":31,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/31","title":"Trigger
-        Details"}},"created_at":"2013-04-08T22:54:17Z","updated_at":"2013-04-08T22:54:17Z","url":"http://www.opencalais.com/HTTPexamples","event":"album_asset_moderated"}}'
+      string: ! '{"response":{"title":"Trigger Details","version":2,"code":200,"href":"https://api.getchute.com/v2/triggers/37?event=album_asset_moderated&trigger%5Bevent%5D=album_asset_moderated&trigger%5Burl%5D=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples&url=http%3A%2F%2Fwww.opencalais.com%2FHTTPexamples"},"data":{"id":37,"links":{"self":{"href":"http://api.getchute.com/v2/triggers/37","title":"Trigger
+        Details"}},"created_at":"2013-04-22T22:26:23Z","updated_at":"2013-04-22T22:26:24Z","url":"http://www.opencalais.com/HTTPexamples","event":"album_asset_moderated"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:17 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:24 GMT
 recorded_with: VCR 2.2.5

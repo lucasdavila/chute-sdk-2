@@ -8,7 +8,7 @@ http_interactions:
       string: ! '{"url":"http://www.google.com","event":"asset_created_once"}'
     headers:
       Authorization:
-      - OAuth API KEY
+      - Bearer API KEY
       Content-Type:
       - application/json
       Accepts:
@@ -25,38 +25,30 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Mon, 08 Apr 2013 22:54:15 GMT
+      - Mon, 22 Apr 2013 22:26:22 GMT
       Server:
       - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
       Status:
       - '400'
-      X-Available-Hourly-Calls:
-      - '4999860'
-      X-Available-Monthly-Calls:
-      - '3719999801'
-      X-Max-Hourly-Calls:
-      - '5000000'
-      X-Max-Monthly-Calls:
-      - '3720000000'
       X-Powered-By:
       - Phusion Passenger (mod_rails/mod_rack) 3.0.18
       X-Rack-Cache:
       - invalidate, pass
       X-Request-Id:
-      - 169c5aa8cb7aa44dc15e8979cbf6d513
+      - e810e662696d82161a77bc1404fca817
       X-Runtime:
-      - '0.038878'
+      - '0.037919'
       X-Ua-Compatible:
       - IE=Edge,chrome=1
       Content-Length:
-      - '567'
+      - '424'
       Connection:
       - keep-alive
     body:
       encoding: US-ASCII
       string: ! '{"response":{"error":["Event is invalid. Valid values are: asset_created
         / asset_updated / asset_deleted / parcel_created / album_created / album_updated
-        / album_deleted / album_asset_moderated / comment_created"],"version":2,"code":400,"href":"https://api.getchute.com/v2/triggers?event=asset_created_once&trigger%5Bevent%5D=asset_created_once&trigger%5Burl%5D=http%3A%2F%2Fwww.google.com&url=http%3A%2F%2Fwww.google.com","api_limits":{"max_monthly_calls":3720000000,"available_monthly_calls":3719999801,"max_hourly_calls":5000000,"available_hourly_calls":4999860}}}'
+        / album_deleted / album_asset_moderated / comment_created"],"version":2,"code":400,"href":"https://api.getchute.com/v2/triggers?event=asset_created_once&trigger%5Bevent%5D=asset_created_once&trigger%5Burl%5D=http%3A%2F%2Fwww.google.com&url=http%3A%2F%2Fwww.google.com"}}'
     http_version: 
-  recorded_at: Mon, 08 Apr 2013 22:54:16 GMT
+  recorded_at: Mon, 22 Apr 2013 22:26:22 GMT
 recorded_with: VCR 2.2.5
