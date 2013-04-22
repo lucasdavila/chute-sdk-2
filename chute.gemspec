@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "chute"
-  s.version = "2.0.0"
+  s.version = "2.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
-  s.date = "2013-04-11"
+  s.date = "2013-04-22"
   s.description = "wrapper for the API for getchute.com"
   s.email = "support@gmail.com"
   s.extra_rdoc_files = [
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
     "lib/chute/configuration.rb",
     "lib/chute/connection.rb",
     "lib/chute/response.rb",
+    "lib/chute/v2/accounts.rb",
     "lib/chute/v2/albums.rb",
     "lib/chute/v2/assets.rb",
     "lib/chute/v2/comments.rb",
