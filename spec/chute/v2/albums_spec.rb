@@ -192,6 +192,26 @@ describe Chute::V2::Albums do
 
     end
 
+    describe "POST to import Assets" do
+
+      let(:id) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
+
+      it "should be able to import assets from instagram_id" do
+        VCR.insert_cassette 'albums/albums_import_assets_from_instagram_id', :record => :new_episodes
+        response = Chute::V2::Albums.import_from_instagram(id, '428193445044210234_1895177')
+        response.should be_true
+        VCR.eject_cassette
+      end
+
+      it "should be able to import assets from urls" do
+        VCR.insert_cassette 'albums/albums_import_assets', :record => :new_episodes
+        response = Chute::V2::Albums.import(id, "http://instagram.com/p/aUxwpugsqp/")
+        response.should be_true
+        VCR.eject_cassette
+      end
+
+    end
+
   end
 
 end

@@ -27,6 +27,11 @@ module Chute
           Chute::Client.post("/v2/albums/#{album_id}/assets/import", :urls=> urls)
         end
 
+        # Import from Instagram Ids
+        def import_from_instagram(album_id, *ids)
+          Chute::Client.post("/v2/albums/#{album_id}/assets/import", :instagram_ids => ids)
+        end
+
         # Album Create
         def create(album)
           Chute::Client.post("/v2/albums", :album => album)
