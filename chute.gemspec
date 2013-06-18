@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
-  s.date = "2013-06-17"
+  s.date = "2013-06-18"
   s.description = "wrapper for the API for getchute.com"
   s.email = "support@gmail.com"
   s.extra_rdoc_files = [
@@ -60,6 +60,8 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/albums/albums_create.yml",
     "spec/fixtures/chute_cassettes/albums/albums_delete.yml",
     "spec/fixtures/chute_cassettes/albums/albums_get.yml",
+    "spec/fixtures/chute_cassettes/albums/albums_import_assets.yml",
+    "spec/fixtures/chute_cassettes/albums/albums_import_assets_from_instagram_id.yml",
     "spec/fixtures/chute_cassettes/albums/albums_list.yml",
     "spec/fixtures/chute_cassettes/albums/albums_stats.yml",
     "spec/fixtures/chute_cassettes/albums/albums_update.yml",
