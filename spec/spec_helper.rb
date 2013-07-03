@@ -10,11 +10,9 @@ require 'vcr'
 Dir["#{File.dirname(__FILE__)}/support/**/*.rb"].each {|f| require f}
 
 RSpec.configure do |config|
-
   config.color_enabled = true
   # Use color not only in STDOUT but also in pagers and files
   config.tty = true
-
 end
 
 #VCR config
@@ -24,4 +22,6 @@ VCR.configure do |c|
   c.hook_into :webmock # or :fakeweb
   c.filter_sensitive_data('API KEY') { Chute.access_token }
   c.allow_http_connections_when_no_cassette = false
+
+
 end

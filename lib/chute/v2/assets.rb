@@ -27,9 +27,14 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}/geo")
         end
 
-        # TODO Implement on server: Asset Create
-        def upload(data)
-          Chute::Client.post("/v2/assets/upload", :urls => urls)
+        def upload(albumId, f)
+          response = RestClient::Request.execute(:url => "#{Chute.upload_endpoint}/v2/albums/#{albumId}/assets/upload", :method => :post,
+                                                 :payload => {
+                                                     :multipart => true,
+                                                     :filedata => f
+                                                 },:headers => {"Authorization" => "Bearer #{Chute.access_token}"}
+          )
+          Chute::Connection.parse(JSON.parse(response.body))
         end
 
         def import(urls, shortcuts)

@@ -32,9 +32,8 @@ describe Chute::V2::Assets do
     end
 
     describe ".upload" do
-      pending "Not implemented yet"
-      it {  Chute::V2::Assets.should respond_to(:upload).with(1).arguments }
-      it {  Chute::V2::Assets.should_not respond_to(:upload).with(2).arguments }
+      it {  Chute::V2::Assets.should respond_to(:upload).with(2).arguments }
+      it {  Chute::V2::Assets.should_not respond_to(:upload).with(3).arguments }
     end
 
     describe ".update" do
@@ -167,5 +166,26 @@ describe Chute::V2::Assets do
 
     end
 
+  end
+
+  describe "POST file upload" do
+    include_context "test files"
+
+    before do
+      VCR.insert_cassette 'assets/assets_upload', :record => :new_episodes
+    end
+    after do
+      VCR.eject_cassette
+    end
+
+    it "should have a sample file to test uploads with" do
+      File.exist?(test_image_path).should == true
+    end
+
+    it "should be able to upload image inside an album" do
+      f = File.new(test_image_path)
+      response = Chute::V2::Assets.upload("2443331", f)
+      response.success?.should == true
+    end
   end
 end

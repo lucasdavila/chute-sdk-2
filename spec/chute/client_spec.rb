@@ -31,6 +31,7 @@ describe Chute::Client do
         @config = {
             :api_endpoint => 'api',
             :auth_endpoint => 'auth',
+            :upload_endpoint => "upload",
             :app_id => 'id',
             :app_secret => 'secret',
             :access_token => 'token',

@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 gem 'httparty'
 gem 'hashie'
+gem 'rest-client'
 
 # Add dependencies to develop your gem here.
 # Include everything needed to run rake, tests, features, etc.
@@ -14,5 +15,5 @@ end
 
 group :test do
   gem 'webmock'
-  gem 'vcr'
+  gem 'vcr' , "~> 2.5.0"
 end
