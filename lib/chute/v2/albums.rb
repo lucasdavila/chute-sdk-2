@@ -59,6 +59,16 @@ module Chute
           Chute::Client.post("/v2/albums/#{album_id}/remove_assets",:asset_ids => asset_ids)
         end
 
+        # Move asset from one album to another, preserving all asset's metadata
+        def move_asset(album_id, asset_id, to_album)
+          Chute::Client.post("/v2/albums/#{album_id}/assets/#{asset_id}/move/#{to_album}")
+        end
+
+        # Copy asset from one album to another, carrying over all asset's metadata
+        def copy_asset(album_id, asset_id, to_album)
+          Chute::Client.post("/v2/albums/#{album_id}/assets/#{asset_id}/copy/#{to_album}")
+        end
+
       end
     end
   end

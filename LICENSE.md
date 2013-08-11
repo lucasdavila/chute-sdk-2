@@ -1,4 +1,6 @@
-Copyright (c) 2012 Darko Grozdanovski
+# The MIT License (MIT)
+
+Copyright (c) 2012-2013 Chute Corporation <hello@getchute.com>, http://getchute.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the

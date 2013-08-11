@@ -1,0 +1,217 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums
+    body:
+      encoding: UTF-8
+      string: ! '{"album":{"name":"Created Album"}}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 11 Aug 2013 23:32:29 GMT
+      Etag:
+      - ! '"74a01869e94f2941fbfeaeaecb13afaa"'
+      Last-Modified:
+      - Sun, 11 Aug 2013 23:32:29 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - cfb9fe42224a657d74f3ab1c04c0eed3
+      X-Runtime:
+      - '0.097367'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums"},"data":{"id":2460567,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2460567","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2460567/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2460567/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-08-11T23:32:29Z","updated_at":"2013-08-11T23:32:29Z","shortcut":"ak6zmbjp","name":"Created
+        Album","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
+    http_version: 
+  recorded_at: Sun, 11 Aug 2013 23:32:27 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums
+    body:
+      encoding: UTF-8
+      string: ! '{"album":{"name":"Created Album"}}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 11 Aug 2013 23:32:29 GMT
+      Etag:
+      - ! '"21352b3f37c3194c28d278651d865c81"'
+      Last-Modified:
+      - Sun, 11 Aug 2013 23:32:29 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 2335119065113af9cf4e783b0d3d3abb
+      X-Runtime:
+      - '0.040749'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Album Details","version":2,"code":201,"href":"https://api.getchute.com/v2/albums"},"data":{"id":2460568,"links":{"self":{"href":"http://api.getchute.com/v2/albums/2460568","title":"Album
+        Details"},"assets":{"href":"http://api.getchute.com/v2/albums/2460568/assets","title":"Asset
+        Listing"},"parcels":{"href":"http://api.getchute.com/v2/albums/2460568/parcels","title":"Parcel
+        Listing"}},"created_at":"2013-08-11T23:32:29Z","updated_at":"2013-08-11T23:32:29Z","shortcut":"ak6Akhgx","name":"Created
+        Album","description":null,"user":{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null},"moderate_media":false,"moderate_comments":false,"parent_id":null}}'
+    http_version: 
+  recorded_at: Sun, 11 Aug 2013 23:32:28 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums/2460567/assets/8765443/move/2460568
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 11 Aug 2013 23:36:20 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 55f4f6b2ec98e5fd2d8921cc1935fa3b
+      X-Runtime:
+      - '0.277516'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '137'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/albums/2460567/assets/8765443/move/2460568"}}'
+    http_version: 
+  recorded_at: Sun, 11 Aug 2013 23:36:18 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/albums/2460567/assets/3452424/copy/2460568
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Sun, 11 Aug 2013 23:36:21 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 57bb05784834befc12b6f7a6c1fcb019
+      X-Runtime:
+      - '0.063099'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '137'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/albums/2460567/assets/3452424/copy/2460568"}}'
+    http_version: 
+  recorded_at: Sun, 11 Aug 2013 23:36:19 GMT
+recorded_with: VCR 2.5.0

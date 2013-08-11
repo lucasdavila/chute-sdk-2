@@ -192,6 +192,31 @@ describe Chute::V2::Albums do
 
     end
 
+    describe "POST move and copy asset" do
+
+      let(:id) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
+      let(:to_album) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
+
+      before do
+        VCR.insert_cassette 'albums/albums_move_copy_asset', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      it "should be able to move asset to another album" do
+        response = Chute::V2::Albums.move_asset(id, 8765443, to_album)
+        response.should be_true
+      end
+
+
+      it "should be able to copy asset to another album" do
+        response = Chute::V2::Albums.copy_asset(id, 3452424, to_album)
+        response.should be_true
+      end      
+
+    end
+
     describe "POST to import Assets" do
 
       let(:id) { Chute::V2::Albums.create({:name => "Created Album"}).data.id }
