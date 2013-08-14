@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "chute"
-  s.version = "2.1.0"
+  s.version = "2.1.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
-  s.date = "2013-08-12"
+  s.date = "2013-08-14"
   s.description = "wrapper for the API for getchute.com"
   s.email = "support@gmail.com"
   s.extra_rdoc_files = [
@@ -45,6 +45,7 @@ Gem::Specification.new do |s|
     "spec/chute/client_spec.rb",
     "spec/chute/connection_spec.rb",
     "spec/chute/response_spec.rb",
+    "spec/chute/v2/accounts_spec.rb",
     "spec/chute/v2/albums_spec.rb",
     "spec/chute/v2/assets_spec.rb",
     "spec/chute/v2/comments_spec.rb",
@@ -55,6 +56,8 @@ Gem::Specification.new do |s|
     "spec/chute/v2/trigger_spec.rb",
     "spec/chute/v2/users_spec.rb",
     "spec/chute/v2/votes_spec.rb",
+    "spec/fixtures/chute_cassettes/accounts/find.yml",
+    "spec/fixtures/chute_cassettes/accounts/me.yml",
     "spec/fixtures/chute_cassettes/albums/album_create_with_permission_view.yml",
     "spec/fixtures/chute_cassettes/albums/albums_add_remove_assets.yml",
     "spec/fixtures/chute_cassettes/albums/albums_create.yml",
@@ -94,11 +97,11 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/chute/chute-sdk-2"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "2.0.3"
+  s.rubygems_version = "1.8.25"
   s.summary = "getchute API wrapper"
 
   if s.respond_to? :specification_version then
-    s.specification_version = 4
+    s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
