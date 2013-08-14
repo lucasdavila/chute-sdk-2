@@ -68,6 +68,13 @@ describe Chute::Client do
       end
       Chute.access_token.should_not == 'abc'
     end
+
+    it 'should return the contents of the block rather than the oauth token' do
+      resp = Chute.as 'abc' do
+        'not the token'
+      end
+      resp.should == 'not the token'
+    end
   end
 
   describe "client request methods" do

@@ -6,10 +6,11 @@ module Chute
     Chute.configure do |config|
       config.access_token = token
     end
-    yield block
+    resp = yield block
     Chute.configure do |config|
       config.access_token = temp_token
     end
+    resp
   end
 
   class Client
