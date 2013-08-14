@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/me/accounts
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Wed, 14 Aug 2013 21:39:41 GMT
+      Etag:
+      - ! '"bd4d3fc369e657da23dd36846c4956bf"'
+      Last-Modified:
+      - Tue, 01 May 2012 20:36:20 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - ff9af75cb42b0c4f864ef6fab09ecaab
+      X-Runtime:
+      - '0.048376'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '504'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Accounts::Chute Listing","version":2,"code":200,"href":"https://api.getchute.com/v2/me/accounts"},"data":[{"id":666,"created_at":"2012-01-17T19:53:42Z","updated_at":"2012-05-01T20:36:20Z","shortcut":"aKaqet","uid":"545","type":"chute","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","access_key":"a8127b7f6e1a9d226775d28eb9401ba028d516bfac301ddd45eb2d8ee80123de","access_secret":null,"email":"darko@getchute.com"}]}'
+    http_version: 
+  recorded_at: Wed, 14 Aug 2013 21:39:41 GMT
+recorded_with: VCR 2.5.0
