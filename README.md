@@ -1,7 +1,5 @@
 # Chute API V2 wrapper gem
 
-![Codeship Status](https://www.codeship.io/projects/76eaf240-e7f7-0130-3ab6-161f8c846575/status)
-
 > Access [Chute API V2](https://api.getchute.com/v2) from Ruby.
 
 
