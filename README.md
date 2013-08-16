@@ -1,4 +1,4 @@
-![Status](https://circleci.com/gh/chute/chute-sdk-2.png?circle-token=:circle-token)
+[![Status](https://circleci.com/gh/chute/chute-sdk-2.png?circle-token=3bc9af73f06e885870e3cf16b85e727ca074e1b6)](https://circleci.com/gh/chute/chute-sdk-2)
 
 # Chute API V2 wrapper gem
 
