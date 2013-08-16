@@ -1,3 +1,5 @@
+![Status](https://circleci.com/gh/chute/chute-sdk-2.png?circle-token=:circle-token)
+
 # Chute API V2 wrapper gem
 
 > Access [Chute API V2](https://api.getchute.com/v2) from Ruby.
