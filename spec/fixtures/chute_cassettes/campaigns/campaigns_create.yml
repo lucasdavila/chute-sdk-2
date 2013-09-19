@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/campaigns
+    body:
+      encoding: UTF-8
+      string: ! '{"campaign":{"name":"some campaign 2013-09-19 15:37:49 -0700"}}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 19 Sep 2013 22:37:50 GMT
+      Etag:
+      - ! '"6a5e0cd7c9fe59e5c102d189d9e32832"'
+      Last-Modified:
+      - Thu, 19 Sep 2013 22:37:50 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 32b954803ff062ec4962cd1909b628bf
+      X-Runtime:
+      - '0.088345'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Campaign Details","version":2,"code":201,"href":"https://api.getchute.com/v2/campaigns"},"data":{"id":134,"links":{"self":{"href":"http://api.getchute.com/v2/campaigns/134","title":"Campaign
+        Details"}},"created_at":"2013-09-19T22:37:50Z","updated_at":"2013-09-19T22:37:50Z","name":"some
+        campaign 2013-09-19 15:37:49 -0700","start_date":null,"end_date":null,"s3_access_key":null,"s3_bucket":null,"s3_secret":null,"ftp_hostname":null,"ftp_username":null,"ftp_password":null,"app_id_facebook":null,"app_secret_facebook":null,"app_id_flickr":null,"app_secret_flickr":null,"app_id_instagram":null,"app_secret_instagram":null,"app_id_google":null,"app_secret_google":null,"users":[{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null,"email":"darko@getchute.com","status":"verified"}]}}'
+    http_version:
+  recorded_at: Thu, 19 Sep 2013 22:37:50 GMT
+recorded_with: VCR 2.5.0

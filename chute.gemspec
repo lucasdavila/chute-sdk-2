@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "chute"
-  s.version = "2.1.2"
+  s.version = "2.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
-  s.date = "2013-08-14"
+  s.date = "2013-09-19"
   s.description = "wrapper for the API for getchute.com"
   s.email = "support@gmail.com"
   s.extra_rdoc_files = [
@@ -32,6 +32,7 @@ Gem::Specification.new do |s|
     "lib/chute/v2/accounts.rb",
     "lib/chute/v2/albums.rb",
     "lib/chute/v2/assets.rb",
+    "lib/chute/v2/campaigns.rb",
     "lib/chute/v2/comments.rb",
     "lib/chute/v2/flags.rb",
     "lib/chute/v2/hearts.rb",
@@ -48,6 +49,7 @@ Gem::Specification.new do |s|
     "spec/chute/v2/accounts_spec.rb",
     "spec/chute/v2/albums_spec.rb",
     "spec/chute/v2/assets_spec.rb",
+    "spec/chute/v2/campaigns_spec.rb",
     "spec/chute/v2/comments_spec.rb",
     "spec/chute/v2/flags_spec.rb",
     "spec/chute/v2/hearts_spec.rb",
@@ -76,6 +78,9 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/assets/assets_list.yml",
     "spec/fixtures/chute_cassettes/assets/assets_update.yml",
     "spec/fixtures/chute_cassettes/assets/assets_upload.yml",
+    "spec/fixtures/chute_cassettes/campaigns/campaign_get.yml",
+    "spec/fixtures/chute_cassettes/campaigns/campaigns.yml",
+    "spec/fixtures/chute_cassettes/campaigns/campaigns_create.yml",
     "spec/fixtures/chute_cassettes/comments/comments_create.yml",
     "spec/fixtures/chute_cassettes/comments/comments_list.yml",
     "spec/fixtures/chute_cassettes/flags/flags_methods.yml",
