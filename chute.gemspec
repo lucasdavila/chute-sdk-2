@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Darko Grozdanovski", "Chris Burkhart", "Petr Bela"]
-  s.date = "2013-09-19"
+  s.date = "2013-10-24"
   s.description = "wrapper for the API for getchute.com"
   s.email = "support@gmail.com"
   s.extra_rdoc_files = [
@@ -81,6 +81,7 @@ Gem::Specification.new do |s|
     "spec/fixtures/chute_cassettes/campaigns/campaign_get.yml",
     "spec/fixtures/chute_cassettes/campaigns/campaigns.yml",
     "spec/fixtures/chute_cassettes/campaigns/campaigns_create.yml",
+    "spec/fixtures/chute_cassettes/campaigns/storage.yml",
     "spec/fixtures/chute_cassettes/comments/comments_create.yml",
     "spec/fixtures/chute_cassettes/comments/comments_list.yml",
     "spec/fixtures/chute_cassettes/flags/flags_methods.yml",
