@@ -1,0 +1,830 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/campaigns
+    body:
+      encoding: UTF-8
+      string: ! '{"campaign":{"name":"Created Campaign"}}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:31:58 GMT
+      Etag:
+      - ! '"159edd8b2943a13422b97c199ae8a34b"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:31:58 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 8f5b4dd3e2ddbb5ae30eabf9ae20e06e
+      X-Runtime:
+      - '0.061859'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Campaign Details","version":2,"code":201,"href":"https://api.getchute.com/v2/campaigns"},"data":{"id":312,"links":{"self":{"href":"http://api.getchute.com/v2/campaigns/312","title":"Campaign
+        Details"}},"created_at":"2013-10-24T21:31:58Z","updated_at":"2013-10-24T21:31:58Z","name":"Created
+        Campaign","start_date":null,"end_date":null,"s3_access_key":null,"s3_bucket":null,"s3_secret":null,"ftp_hostname":null,"ftp_username":null,"ftp_password":null,"app_id_facebook":null,"app_secret_facebook":null,"app_id_flickr":null,"app_secret_flickr":null,"app_id_instagram":null,"app_secret_instagram":null,"app_id_google":null,"app_secret_google":null,"users":[{"id":545,"links":{"self":{"href":"http://api.getchute.com/v2/users/545","title":"User
+        Details"}},"created_at":"2012-01-17T19:53:39Z","updated_at":"2012-09-15T10:55:51Z","name":"darko1002001","username":"darko1002001","avatar":"http://static.getchute.com/v1/images/avatar-100x100.png","profile":null,"email":"darko@getchute.com","status":"verified"}]}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:31:58 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/campaigns/312/store/temp
+    body:
+      encoding: UTF-8
+      string: ! '{"a":"b"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:31:59 GMT
+      Etag:
+      - ! '"57672d26d8b2643412d0b75ea9e6c6a8"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:31:59 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 51041b8a5b1c3f5ca471331d6379c653
+      X-Runtime:
+      - '0.057823'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '343'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Temp Details","version":2,"code":201,"href":"https://api.getchute.com/v2/campaigns/312/store/temp"},"data":{"id":"526991cf8a9eb036ef000001","created_at":"2013-10-24T21:31:59Z","updated_at":"2013-10-24T21:31:59Z","value":"{\"a\":\"b\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991cf8a9eb036ef000001"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:31:59 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/temp/526991cf8a9eb036ef000001
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:31:59 GMT
+      Etag:
+      - ! '"57672d26d8b2643412d0b75ea9e6c6a8"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:31:59 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - b018940c7d0fa195e305147c23935a72
+      X-Runtime:
+      - '0.022160'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '368'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Temp Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/temp/526991cf8a9eb036ef000001"},"data":{"id":"526991cf8a9eb036ef000001","created_at":"2013-10-24T21:31:59Z","updated_at":"2013-10-24T21:31:59Z","value":"{\"a\":\"b\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991cf8a9eb036ef000001"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:31:59 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/temp/526991cf8a9eb036ef000001
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:00 GMT
+      Etag:
+      - ! '"57672d26d8b2643412d0b75ea9e6c6a8"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:00 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 8a3e7965c82231f0ce45ae821b2d4df6
+      X-Runtime:
+      - '0.054690'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '368'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Temp Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/temp/526991cf8a9eb036ef000001"},"data":{"id":"526991cf8a9eb036ef000001","created_at":"2013-10-24T21:31:59Z","updated_at":"2013-10-24T21:32:00Z","value":"{\"b\":\"c\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991cf8a9eb036ef000001"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:00 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/campaigns/312/store/private
+    body:
+      encoding: UTF-8
+      string: ! '{"a":"b"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:01 GMT
+      Etag:
+      - ! '"13217ec840916f534039aa85400a2328"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:01 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 7cc9dc089af1dda88f9dbda0d30f38e4
+      X-Runtime:
+      - '0.032817'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '284'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Private Details","version":2,"code":201,"href":"https://api.getchute.com/v2/campaigns/312/store/private"},"data":{"id":"526991d18a9eb036ef000002","created_at":"2013-10-24T21:32:01Z","updated_at":"2013-10-24T21:32:01Z","value":"{\"a\":\"b\"}","url":null}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:00 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/private/526991d18a9eb036ef000002
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:02 GMT
+      Etag:
+      - ! '"13217ec840916f534039aa85400a2328"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:01 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 7b43ca413ea2ca6f3b07669aca1abc01
+      X-Runtime:
+      - '0.158664'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '309'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Private Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/private/526991d18a9eb036ef000002"},"data":{"id":"526991d18a9eb036ef000002","created_at":"2013-10-24T21:32:01Z","updated_at":"2013-10-24T21:32:01Z","value":"{\"a\":\"b\"}","url":null}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:01 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/private/526991d18a9eb036ef000002
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:02 GMT
+      Etag:
+      - ! '"13217ec840916f534039aa85400a2328"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:02 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 28fbca1afd97426449ea0c484a6d3939
+      X-Runtime:
+      - '0.041037'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '309'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Private Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/private/526991d18a9eb036ef000002"},"data":{"id":"526991d18a9eb036ef000002","created_at":"2013-10-24T21:32:01Z","updated_at":"2013-10-24T21:32:02Z","value":"{\"b\":\"c\"}","url":null}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:02 GMT
+- request:
+    method: post
+    uri: https://api.getchute.com/v2/campaigns/312/store/public
+    body:
+      encoding: UTF-8
+      string: ! '{"a":"b"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:03 GMT
+      Etag:
+      - ! '"9ead386fed08d0052e65de9ef3e34b2c"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:03 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '201'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 4be9acfd0bca45ed265493970debffa5
+      X-Runtime:
+      - '0.139704'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '347'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Public Details","version":2,"code":201,"href":"https://api.getchute.com/v2/campaigns/312/store/public"},"data":{"id":"526991d38a9eb036ef000003","created_at":"2013-10-24T21:32:03Z","updated_at":"2013-10-24T21:32:03Z","value":"{\"a\":\"b\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991d38a9eb036ef000003"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:03 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/public/526991d38a9eb036ef000003
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:04 GMT
+      Etag:
+      - ! '"9ead386fed08d0052e65de9ef3e34b2c"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:03 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 0f7d68f9ebbfec19aa2f0d477f2d44fa
+      X-Runtime:
+      - '0.054616'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '372'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Public Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/public/526991d38a9eb036ef000003"},"data":{"id":"526991d38a9eb036ef000003","created_at":"2013-10-24T21:32:03Z","updated_at":"2013-10-24T21:32:03Z","value":"{\"a\":\"b\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991d38a9eb036ef000003"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:04 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/public/526991d38a9eb036ef000003
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:32:04 GMT
+      Etag:
+      - ! '"9ead386fed08d0052e65de9ef3e34b2c"'
+      Last-Modified:
+      - Thu, 24 Oct 2013 21:32:04 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '200'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 8174f217fe8a5182482942851160f0b2
+      X-Runtime:
+      - '0.094694'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '372'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"title":"Stores::Public Details","version":2,"code":200,"href":"https://api.getchute.com/v2/campaigns/312/store/public/526991d38a9eb036ef000003"},"data":{"id":"526991d38a9eb036ef000003","created_at":"2013-10-24T21:32:03Z","updated_at":"2013-10-24T21:32:04Z","value":"{\"b\":\"c\"}","url":"http://s3.amazonaws.com/store.getchute.com/526991d38a9eb036ef000003"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:32:04 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/temp/asd
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:30 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 54656caff6af34af9b844f3f343dd1fc
+      X-Runtime:
+      - '0.012319'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '123'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/temp/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:29 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/temp/asd
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:30 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - b6e648e2a0e5c687094eb619c5eb9ad9
+      X-Runtime:
+      - '0.022876'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '123'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/temp/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:30 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/private/asd
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:31 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - 72a4c88c4fb7c3da3cba5ee67fc2acaa
+      X-Runtime:
+      - '0.114464'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '126'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/private/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:31 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/private/asd
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:31 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - dd383afdaed09970844606a73b72ed72
+      X-Runtime:
+      - '0.024804'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '126'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/private/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:31 GMT
+- request:
+    method: get
+    uri: https://api.getchute.com/v2/campaigns/312/store/public/asd
+    body:
+      encoding: UTF-8
+      string: ! '{}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache, private
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:32 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - miss
+      X-Request-Id:
+      - cdc6527648501fd646bed25b2be05af6
+      X-Runtime:
+      - '0.068779'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '125'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/public/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:32 GMT
+- request:
+    method: put
+    uri: https://api.getchute.com/v2/campaigns/312/store/public/asd
+    body:
+      encoding: UTF-8
+      string: ! '{"b":"c"}'
+    headers:
+      Authorization:
+      - Bearer API KEY
+      Content-Type:
+      - application/json
+      Accepts:
+      - application/json
+      X-Client-Id:
+      - 508fc620018d162a070000d6
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Cache-Control:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Date:
+      - Thu, 24 Oct 2013 21:33:33 GMT
+      Server:
+      - nginx/1.2.7 + Phusion Passenger 3.0.18 (mod_rails/mod_rack)
+      Status:
+      - '404'
+      X-Powered-By:
+      - Phusion Passenger (mod_rails/mod_rack) 3.0.18
+      X-Rack-Cache:
+      - invalidate, pass
+      X-Request-Id:
+      - 00462052c38d0fe6b6cd32edba758b5c
+      X-Runtime:
+      - '0.061944'
+      X-Ua-Compatible:
+      - IE=Edge,chrome=1
+      Content-Length:
+      - '125'
+      Connection:
+      - keep-alive
+    body:
+      encoding: US-ASCII
+      string: ! '{"response":{"error":"Not Found","version":2,"code":404,"href":"https://api.getchute.com/v2/campaigns/312/store/public/asd"}}'
+    http_version: 
+  recorded_at: Thu, 24 Oct 2013 21:33:33 GMT
+recorded_with: VCR 2.5.0

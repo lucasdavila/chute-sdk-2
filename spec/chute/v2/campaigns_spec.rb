@@ -64,6 +64,39 @@ describe Chute::V2::Campaigns do
       end
     end
 
+    describe "storage endpoints" do
+      before do
+        VCR.insert_cassette 'campaigns/storage', :record => :new_episodes
+      end
+      after do
+        VCR.eject_cassette
+      end
+
+      let(:id) { Chute::V2::Campaigns.create({:name => "Created Campaign"}).data.id }
+
+      [:temp, :private, :public].each do |storage_type|
+        it "Test #{storage_type} storage flow" do
+          response = Chute::V2::Campaigns.send("#{storage_type}_storage_create", id, {a: "b"})
+          @id = response.data.id
+          response.data.should_not == nil
+        end
+
+        it "GET #{storage_type} storage" do
+          response = Chute::V2::Campaigns.send("#{storage_type}_storage_create", id, {a: "b"})
+          @id = response.data.id
+          response = Chute::V2::Campaigns.send("#{storage_type}_storage_find", id, @id)
+          response.data.id.should == @id
+        end
+
+        it "PUT #{storage_type} storage" do
+          response = Chute::V2::Campaigns.send("#{storage_type}_storage_create", id, {a: "b"})
+          @id = response.data.id
+          response = Chute::V2::Campaigns.send("#{storage_type}_storage_update", id, @id, {b: "c"})
+          JSON.parse(response.data.value).should == {"b" => "c"}
+        end
+      end
+    end
+
   end
 
 end
