@@ -27,8 +27,8 @@ module Chute
           Chute::Client.get("/v2/assets/#{id}/geo")
         end
 
-        def upload(albumId, f)
-          response = RestClient::Request.execute(:url => "#{Chute.upload_endpoint}/v2/albums/#{albumId}/assets/upload", :method => :post,
+        def upload(album_id, f)
+          response = RestClient::Request.execute(:url => "#{Chute.upload_endpoint}/v2/albums/#{album_id}/assets/upload", :method => :post,
                                                  :payload => {
                                                      :multipart => true,
                                                      :filedata => f
